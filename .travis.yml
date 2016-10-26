@@ -1,11 +1,14 @@
-language: python - "3.5"
+language: python
+
+python:
+  - "3.5"
 
 install:
-    pip install -r requirements.txt
-    pip install travis-sphinx
+  pip install -r requirements.txt
+  pip install travis-sphinx
 
 script:
-    - travis-sphinx build
+  - travis-sphinx build
 
 after_success:
-    - travis-sphinx deploy
+  - travis-sphinx deploy
