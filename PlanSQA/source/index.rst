@@ -16,12 +16,12 @@ Plan de Aseguramiento de la Calidad de Software
    pruebas
    configuracion
    riesgos
+   estilos
 
 
 Indices and tables
 ==================
 
-* :ref:`estilos`
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
