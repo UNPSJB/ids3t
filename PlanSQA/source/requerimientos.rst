@@ -43,19 +43,17 @@ En el caso de que no se dispongan de herramientas de gestión de requisitos que 
 
 *Trazabilidad*: Para mantener la trazabilidad, los requisitos deben estar convenientemente trazados hacia adelante y hacia atrás en el proceso de desarrollo. Así, se suelen mantener las trazas hacia:
 
-    - Autores: son los autores del requisito. Lo habitual es atribuir los requisitos con el nombre y organización a la que pertenecen las personas que lo han redactado. Esta información es importante para poder gestionar posibles disconformidades de calidad de los requisitos y para solventar dudas o conflictos que puedan surgir.
     
-    - Fuentes: son las personas (casi siempre clientes y/o usuarios) o documentos que han proporcionado información sobre el requisito. Esta información es importante para poder solventar posibles dudas o conflictos que puedan surgir.
-    
-    - Dependencias: otros productos de desarrollo de los que depende el requisito. Es el concepto más habitual de trazabilidad, en el que se atribuyen los requisitos con la información de otros productos de desarrollo que, en caso de cambio, podrían tener impacto sobre el requisito. Esta información es fundamental para poder realizar un análisis de impacto de un cambio dentro del Procedimiento de control de cambios establecido en el proyecto.
+    * Autores: son los autores del requisito. Lo habitual es atribuir los requisitos con el nombre y organización a la que pertenecen las personas que lo han redactado. Esta información es importante para poder gestionar posibles disconformidades de calidad de los requisitos y para solventar dudas o conflictos que puedan surgir.  
+    * Fuentes: son las personas (casi siempre clientes y/o usuarios) o documentos que han proporcionado información sobre el requisito. Esta información es importante para poder solventar posibles dudas o conflictos que puedan surgir.
+    * Dependencias: otros productos de desarrollo de los que depende el requisito. Es el concepto más habitual de trazabilidad, en el que se atribuyen los requisitos con la información de otros productos de desarrollo que, en caso de cambio, podrían tener impacto sobre el requisito. Esta información es fundamental para poder realizar un análisis de impacto de un cambio dentro del Procedimiento de control de cambios establecido en el proyecto.
 
 La información de las dependencias no siempre se muestra asociada a cada requisito, sino que es habitual representarla en forma de matriz de trazabilidad o de listas de trazabilidad.
 
 *Importancia*: La importancia de un requisito indica la relevancia del requisito para los clientes y usuarios, y suele estar relacionada con la importancia de los objetivos de negocio que el requisito ayuda a cumplir. La importancia se suele expresar de diversas formas:
 
-    - Valores numéricos: se asigna un valor numérico a la importancia del requisito, normalmente entre 0 y 3 o entre 0 y 5. Algunas propuestas asumen que el valor mínimo (cero o uno normalmente) es la máxima importancia, mientras que otras asumen que es el valor máximo el que representa la importancia.
-    
-    - Valores enumerados: se crea una escala de prioridad con valores como alta, media y baja. También se pueden usar una escala ordinal con literales con expresiones como vital, importante y prescindible y se asigna a cada requisito un valor. Puede existir una correspondencia directa con valores numéricos (por ejemplo alta = 0, media = 1 y baja = 2).
+    * Valores numéricos: se asigna un valor numérico a la importancia del requisito, normalmente entre 0 y 3 o entre 0 y 5. Algunas propuestas asumen que el valor mínimo (cero o uno normalmente) es la máxima importancia, mientras que otras asumen que es el valor máximo el que representa la importancia.
+    * Valores enumerados: se crea una escala de prioridad con valores como alta, media y baja. También se pueden usar una escala ordinal con literales con expresiones como vital, importante y prescindible y se asigna a cada requisito un valor. Puede existir una correspondencia directa con valores numéricos (por ejemplo alta = 0, media = 1 y baja = 2).
 
 *Estabilidad*: La estabilidad de un requisito indica una estimación de la probabilidad de que el requisito no cambie durante el resto del desarrollo. Este atributo es especialmente interesante para detectar posibles fuentes de cambios en un proyecto y prepararse para ello. Puede expresarse como un valor numérico (como un porcentaje de probabilidad por ejemplo) o como un valor enumerado (por ejemplo: alta, media o baja).
 
@@ -108,7 +106,7 @@ A fin de valorar la calidad del modelo de análisis y la correspondiente especif
 		
     Q1 = nui / nr
 	
-    Donde nu i es el número de requisitos para los que todos los revisores tuvieron interpretaciones idénticas. Cuanto más cerca de uno este el valor de Q1 menor será la ambigüedad de la especificación.
+    Donde nui es el número de requisitos para los que todos los revisores tuvieron interpretaciones idénticas. Cuanto más cerca de uno este el valor de Q1 menor será la ambigüedad de la especificación.
 
 * Para la corrección de requisitos, se sugiere una métrica que indique la proporción de requisitos correctos (verificados): 
 
@@ -135,6 +133,7 @@ Herramientas
 Las herramientas que los gestores de requisitos utilizan para automatizar los procesos de Ingeniería de Requisitos, han disminuido el trabajo duro en el mantenimiento de requisitos, añadiendo beneficios importantes al reducir errores. Estas herramientas también ayudan a evaluar el posible impacto de los cambios en los requisitos, en los procedimientos, costes y personal.
 Mientras mayor flexibilidad tenga la herramienta, mucha mayor posibilidad de ajustarse a las necesidades que se tienen.
 Se enuncian algunas herramientas comunes:
+
 * IRqA: es una herramienta de ingeniería de requisitos especialmente diseñada para soportar el proceso completo de ingeniería de requisitos. En IRqA el ciclo de especificación completo incluye la captura de requisitos, análisis, especificación de sistema, validación y la organización de requisitos es soportada por modelos estándares
 * Doors: a diferencia del resto de las herramientas, considera los requisitos como objetos y los documentos como módulos. Tiene una orientación basada en objetos. Es una herramienta para organizaciones grandes que necesitan controlar complejos conjuntos de usuarios y requisitos de sistemas con una completa trazabilidad. Proporciona buena visualización de tales documentos como jerárquicas, y su lenguaje de extensión permite una gran variedad de soporte de herramientas a ser construidas.
 * RequisitePro: es una herramienta centrada en documentos, que almacena los requisitos asociandolos a documentos. Auxilia especialmente en el control de cambio de requisitos, con trazabilidad para especificaciones de software y pruebas.
