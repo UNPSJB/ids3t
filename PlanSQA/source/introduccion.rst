@@ -67,7 +67,7 @@ El responsable de SQA tiene la libertad de reportar anomalías y no conformidade
 * Verificar que los factores de calidad se implementaron en el sistema.
 * Implementar las prácticas de pruebas en el sistema, procesos y procedimientos, como está definido en el documento de pruebas.
 
-** Diseño y codificación son responsables de:**
+**Diseño y codificación son responsables de:**
 
 * Comentar acerca del plan de SQA.
 * Implementar la calidad en el diseño y codificación de acuerdo a este plan de SQA.
@@ -114,6 +114,7 @@ El responsable de SQA tiene la libertad de reportar anomalías y no conformidade
 | Aprobar el Plan SQA    | X         | X              |              |                   |            |          |     |
 +------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
 
+
 +---------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
 | **Revisión de productos de Software** | Admin SQA | Admin Proyecto | Adm de Conf. | Desarrollo/Diseño | Pruebas SW | Plan SQA | Req |
 +=======================================+===========+================+==============+===================+============+==========+=====+
@@ -121,6 +122,7 @@ El responsable de SQA tiene la libertad de reportar anomalías y no conformidade
 +---------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
 | Aprobar el producto                   | X         | X              |              |                   |            |          |     |
 +---------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
+
 
 +------------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
 | **Evaluar las herramientas de software** | Admin SQA | Admin Proyecto | Adm de Conf. | Desarrollo/Diseño | Pruebas SW | Plan SQA | Req |
@@ -130,6 +132,7 @@ El responsable de SQA tiene la libertad de reportar anomalías y no conformidade
 | Resolver las recomendaciones de la       |           | X              |              |                   |            |          |     |
 | auditoría                                |           |                |              |                   |            |          |     |
 +------------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
+
 
 +-------------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
 | **Planificación del proyecto, seguimiento | Admin SQA | Admin Proyecto | Adm de Conf. | Desarrollo/Diseño | Pruebas SW | Plan SQA | Req |
@@ -142,6 +145,7 @@ El responsable de SQA tiene la libertad de reportar anomalías y no conformidade
 +-------------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
 | Aprobar Planes                            |           | X              |              |                   |            |          |     |
 +-------------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
+
 
 +-------------------------------------------+-----------+----------------+--------------+-------------------+------------+----------+-----+
 | **Proceso de análisis de requerimiento    | Admin SQA | Admin Proyecto | Adm de Conf. | Desarrollo/Diseño | Pruebas SW | Plan SQA | Req |
