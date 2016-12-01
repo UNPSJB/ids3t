@@ -13,9 +13,10 @@ La gestión de riesgos permite definir en forma estructurada, operacional y orga
 
 Alcances
 ========
-Identificar, analizar y cuantificar posibles riesgos que puedan aparecer durante el desarrollo de un proyecto software.
-Desarrollar respuestas adecuadas para los posibles riesgos.
-Monitorizar el transcurso de un proyecto para evaluar el estado de los riesgos y actuar en consecuencia.
+
+* Identificar, analizar y cuantificar posibles riesgos que puedan aparecer durante el desarrollo de un proyecto software.
+* Desarrollar respuestas adecuadas para los posibles riesgos.
+* Monitorizar el transcurso de un proyecto para evaluar el estado de los riesgos y actuar en consecuencia.
 
 Objetivos
 =========
@@ -28,7 +29,7 @@ Roles y responsabilidades dentro de la gestión de riesgos
 =========================================================
 
 +---------------------------------------------+---------------------------------------------+---------------------------------------------+
-| Actividad                                   | Rol Responsable                             |                                 Descripción |
+| **Actividad**                               | **Rol Responsable**                         |                             **Descripción** |
 +=============================================+=============================================+=============================================+
 | Desarrollo del plan de gestión de riesgos   | Jefe de proyecto                            | Desarrolla y mantiene el plan de gestión de |
 |                                             |                                             | riesgos.                                    |
@@ -95,7 +96,7 @@ Roles y responsabilidades dentro de la gestión de riesgos
 
 +---------------------+------------------+---------------------------+-----------+------------------------+---------------------+--------------------------+
 |                     | Jefe de proyecto | Involucrado en el negocio | Aceptador | Expertos en la materia | Equipo del proyecto | Responsable de un riesgo |
-+---------------------+------------------+---------------------------+-----------+------------------------+---------------------+--------------------------+
++=====================+==================+===========================+===========+========================+=====================+==========================+
 | Planificación       |        X         |             X             |     X     |                        |                     |                          |
 | gestión de riesgos  |                  |                           |           |                        |                     |                          |
 +---------------------+------------------+---------------------------+-----------+------------------------+---------------------+--------------------------+
@@ -130,145 +131,83 @@ La gestión de los riesgos del proyecto incluye los procesos relacionados con la
 
 En el siguiente gráfico se puede observar cómo están relacionadas estas actividades:
 
-+--------------------------+-----------------------------+-----------------------------------------------+--------------------------+---------------------------+
-| Actividades              | Descripción                 | Entradas                                      | Salidas                  | Herramientas              |
-+==========================+=============================+===============================================+==========================+===========================+
-| Desarrollar un plan de   | Se debe decidir cómo        | * Factores ambientales de la empresa.         | Plan de gestión de       | Reuniones y análisis de   |
-| gestión de riesgos       | abordar y llevar a cabo     | * Activos de los procesos de la organización. | riesgos                  | planificación             |
-|                          | las actividades de          | * Políticas y estándares de la organización.  |                          |                           |
-|                          | gestión de riesgos de un    | * Enunciado del alcance del proyecto.         |                          |                           |
-|                          | proyecto.                   | * Plan de gestión del proyecto.               |                          |                           |
-|                          | Además se debe planificar   | * Estructura de tareas desglosada (WBS)       |                          |                           |
-|                          | y realizar una aproximación |                                               |                          |                           |
-|                          | de las tareas relacionadas  |                                               |                          |                           |
-|                          | con la gestión de riesgos   |                                               |                          |                           |
-|                          | del proyecto y realizar     |                                               |                          |                           |
-|                          | revisiones sobre dichas     |                                               |                          |                           |
-|                          | actividades a lo largo del  |                                               |                          |                           |
-|                          | proyecto.                   |                                               |                          |                           |
-+--------------------------+-----------------------------+-----------------------------------------------+--------------------------+---------------------------+
-| Identificar Riesgos      | Se deberá determinar cuáles | * Categoría de riesgos                        | Registro de riesgos      | Registro de riesgos       |
-|                          | son los riesgos que podrían | * Clasificación de fuentes de riesgos         |                          |                           |
-|                          | afectar a los proyectos     | * Factores ambientales de la empresa          | * Riesgos identificados  | * Artefactos para la      |
-|                          | y documentar sus            | * Activos de los procesos de la organización  | * Disparadores           | identificación de riesgos |
-|                          | características             | * Enunciado del alcance del proyecto          | * Suposiciones           | (hoja de cálculo…)        |
-|                          |                             | * Plan de gestión de riesgos                  |                          | * Revisiones de           |
-|                          |                             | * Plan de gestión de proyectos (WBS, agenda,  |                          | documentación             |
-|                          |                             | recursos, requisitos, alcance, diseño,..)     |                          |                           |
-|                          |                             | * Información histórica: lecciones aprendidas |                          |                           |
-|                          |                             |                                               |                          |                           |
-+--------------------------+-----------------------------+-----------------------------------------------+--------------------------+---------------------------+
-| Analizar Riesgos         | Se deberá evaluar los       | * Plan de gestión de riesgos                  | * Registro de riesgos    | * Evaluación de           |
-|                          | riesgos identificados en la | * Lista de riesgos identificados              | actualizado              | probabilidad e impacto de |   
-|                          | fase anterior para          | (registro de riesgos)                         | * Lista de riesgos       | los riesgos.              |
-|                          | determinar la probabilidad  | * Suposiciones                                | priorizados por impacto  | * Matriz de probabilidad  |
-|                          | de que ocurran, el impacto  | * Juicio de expertos                          | y probabilidad           | e impacto.                |
-|                          | del riesgo, el impacto      | * Enunciado del alcance del proyecto          |                          | * Evaluación de la        |
-|                          | acumulativo de múltiples    | * Activos de los procesos de la organización  |                          | calidad de los datos      |
-|                          | riesgos y la prioridad      | * Plan de gestión del proyecto                |                          | sobre riesgos.            |
-|                          | de cada riesgo. El          |                                               |                          | * Categorización de       |
-|                          | análisis de riesgo debería  |                                               |                          | riesgos.                  |
-|                          | ser revisado a través del   |                                               |                          | * Evaluación de la        |
-|                          | proyecto y ajustado         |                                               |                          | urgencia de riesgos       |   
-|                          | en función de los cambios   |                                               |                          | * Técnicas de análisis    |
-|                          | que se vayan produciendo    |                                               |                          | cuantitativo de riesgos   |
-|                          | sobre los riesgos del       |                                               |                          | (y cualitativo)           |
-|                          | proyecto.                   |                                               |                          |                           |
-+--------------------------+-----------------------------+-----------------------------------------------+--------------------------+---------------------------+
-| Planificar respuestas a  | Desarrollar opciones y      |                                               |                          |                           |
-| los riesgos              | determinar acciones para    |                                               |                          |                           |
-|                          | mejorar las oportunidades   |                                               |                          |                           |
-|                          | y reducir las amenazas      |                                               |                          |                           |
-|                          | a los objetivos del         |                                               |                          |                           |
-|                          | proyecto. Se realizará      |                                               |                          |                           |
-|                          | después de los procesos     |                                               |                          |                           |
-|                          |                             |                                               |                          |                           |
-|                          |                             |                                               |                          |                           |
-|                          |                             |                                               |                          |                           |
+.. figure:: _static/riesgoactividades.png
+    :scale: 80%
+    :align: center
 
-
-
-      después de los procesos de análisis cualitativo de riesgos y análisis cuantitativo de riesgos. Se deberá abordar los riesgos en función de su prioridad, introduciendo recursos y actividades en el presupuesto, cronograma y plan de gestión del proyecto, según sea necesario.
--Plan de gestión de riesgos
-
--Lista de riesgos priorizados y cuantificados
-
--Lista de riesgos para un análisis y gestión adicional
-
--Propietarios del riesgo
-
--Plan de respuesta de riesgos
-
--Riesgos residuales
-
--Acuerdos contractuales relacionados con el riesgo
-
--Reserva de riesgos necesaria
-
--Plan de gestión del proyecto actualizado
-
--Registro de riesgos actualizado
-
--Registro de riesgos
-
--Estrategias para riesgos
-
--Estrategia de respuesta para contingencias
-
-Controlar y monitorizar riesgos
-Se deberá controlar los disparadores de riesgos, gestionar los riesgos identificados, realizar seguimientos sobre los riesgos residuales, descubrir nuevos riesgos, ejecutar planes de respuesta de riesgos y evaluar la efectividad de las acciones de respuesta.
--Plan de gestión de riesgos
-
--Plan de respuesta a los riesgos
-
--Comunicación del proyecto
-
--Cambios de alcance
-
--Identificación y análisis de riesgos adicionales
-
--Registro de riesgos
-
--Solicitudes de cambio aprobadas
-
--Informes de rendimiento
-
--Documentación adicional sobre riesgos del proyecto, incluyendo planes temporales, planes de acción correctiva, solicitudes de cambio.
-
--Lecciones aprendidas
-
--Actualizaciones de información de riesgos, planes de respuesta y estado de registro de riesgos
-
--Plan de gestión del proyecto actualizado
-
--Acciones correctivas y preventivas recomendadas
-
--Registro de riesgos
-
--Auditorías de los riesgos
-
--Medición del rendimiento
-
--Reuniones sobre el estado de la situación
-
-Cierre de gestión de riesgos
-Compartir lecciones aprendidas es un recurso muy valioso en el ámbito de la gestión de riesgos. Estas lecciones pueden proporcionar experiencia general sobre el proceso de gestión de riesgos y su relación con las salidas del proyecto. Las lecciones aprendidas deberían se capturadas a lo largo de todo el ciclo de vida del proyecto, no solamente en esta última etapa de cierre del proyecto.
--Plan de gestión de riesgos
-
--Planes de respuesta a los riesgos desde el registro de riesgos
-
--Comunicación de riesgos
-
--Realimentación del equipo
-
--Lecciones aprendidas documentadas en un informe del cierre del proyecto.
-
--Mejoras registradas para el proceso, plantillas y herramientas de la gestión de riesgos
-
--Mejoras registradas para otros procesos del proyecto, plantillas y herramientas
-
-Registro de riesgos
-
++--------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+
+| Actividades              | Descripción                                                     | Entradas                                                                        | Salidas                                                | Herramientas                                            |
++==========================+=================================================================+=================================================================================+========================================================+=========================================================+
+| Desarrollar un plan de   | Se debe decidir cómo                                            | - Factores ambientales de la empresa.                                           | Plan de gestión de                                     | Reuniones y análisis de                                 |
+| gestión de riesgos       | abordar y llevar a cabo                                         | - Activos de los procesos de la organización.                                   | riesgos                                                | planificación                                           |
+|                          | las actividades de                                              | - Políticas y estándares de la organización.                                    |                                                        |                                                         |
+|                          | gestión de riesgos de un                                        | - Enunciado del alcance del proyecto.                                           |                                                        |                                                         |
+|                          | proyecto.                                                       | - Plan de gestión del proyecto.                                                 |                                                        |                                                         |
+|                          | Además se debe planificar                                       | - Estructura de tareas desglosada (WBS)                                         |                                                        |                                                         |
+|                          | y realizar una aproximación                                     |                                                                                 |                                                        |                                                         |
+|                          | de las tareas relacionadas                                      |                                                                                 |                                                        |                                                         |
+|                          | con la gestión de riesgos                                       |                                                                                 |                                                        |                                                         |
+|                          | del proyecto y realizar                                         |                                                                                 |                                                        |                                                         |
+|                          | revisiones sobre dichas                                         |                                                                                 |                                                        |                                                         |
+|                          | actividades a lo largo del                                      |                                                                                 |                                                        |                                                         |
+|                          | proyecto.                                                       |                                                                                 |                                                        |                                                         |
++--------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+
+| Identificar Riesgos      | Se deberá determinar cuáles                                     | - Categoría de riesgos                                                          | Registro de riesgos                                    | Registro de riesgos                                     |
+|                          | son los riesgos que podrían                                     | - Clasificación de fuentes de riesgos                                           |                                                        |                                                         |
+|                          | afectar a los proyectos                                         | - Factores ambientales de la empresa                                            | - Riesgos identificados                                | - Artefactos para la                                    |
+|                          | y documentar sus                                                | - Activos de los procesos de la organización                                    | - Disparadores                                         |   identificación de riesgos                             |
+|                          | características                                                 | - Enunciado del alcance del proyecto                                            | - Suposiciones                                         |   (hoja de cálculo…)                                    |
+|                          |                                                                 | - Plan de gestión de riesgos                                                    |                                                        | - Revisiones de                                         |
+|                          |                                                                 | - Plan de gestión de proyectos (WBS, recursos, requisitos, alcance, diseño,..)  |                                                        |   documentación                                         |
+|                          |                                                                 | - Información histórica: lecciones aprendidas                                   |                                                        |                                                         |
++--------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+
+| Analizar Riesgos         | Se deberá evaluar los                                           | - Plan de gestión de riesgos                                                    | - Registro de riesgos                                  | - Evaluación de                                         |
+|                          | riesgos identificados en la                                     | - Lista de riesgos identificados                                                | actualizado                                            |   probabilidad e impacto de                             |
+|                          | fase anterior para                                              |   (registro de riesgos)                                                         | - Lista de riesgos                                     |   los riesgos.                                          |
+|                          | determinar la probabilidad                                      | - Suposiciones                                                                  | priorizados por impacto                                | - Matriz de probabilidad                                |
+|                          | de que ocurran, el impacto                                      | - Juicio de expertos                                                            | y probabilidad                                         |   e impacto.                                            |
+|                          | del riesgo, el impacto                                          | - Enunciado del alcance del proyecto                                            |                                                        | - Evaluación de la                                      |
+|                          | acumulativo de múltiples                                        | - Activos de los procesos de la organización                                    |                                                        |   calidad de los datos                                  |
+|                          | riesgos y la prioridad                                          | - Plan de gestión del proyecto                                                  |                                                        |   sobre riesgos.                                        |
+|                          | de cada riesgo. El                                              |                                                                                 |                                                        | - Categorización de                                     |
+|                          | análisis de riesgo debería                                      |                                                                                 |                                                        |   riesgos.                                              |
+|                          | ser revisado a través del                                       |                                                                                 |                                                        | - Evaluación de la                                      |
+|                          | proyecto y ajustado                                             |                                                                                 |                                                        |   urgencia de riesgos                                   |
+|                          | en función de los cambios                                       |                                                                                 |                                                        | - Técnicas de análisis                                  |
+|                          | que se vayan produciendo                                        |                                                                                 |                                                        |   cuantitativo de riesgos                               |
+|                          | sobre los riesgos del                                           |                                                                                 |                                                        |   (y cualitativo)                                       |
+|                          | proyecto.                                                       |                                                                                 |                                                        |                                                         |
++--------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+
+| Planificar respuestas a  | Desarrollar opciones y                                          | - Plan de gestión de riesgos                                                    | - Plan de respuesta de riesgos                         | - Registro de riesgos                                   |
+| los riesgos              | determinar acciones para                                        | - Lista de riesgos priorizados y cuantificados                                  | - Riesgos residuales                                   | - Estrategias para riesgos                              |
+|                          | mejorar las oportunidades                                       | - Lista de riesgos para un análisis y gestión adicional                         | - Acuerdos contractuales relacionados con el riesgo    | - Estrategia de respuesta para contingencias            |
+|                          | y reducir las amenazas                                          | - Propietarios del riesgo                                                       | - Reserva de riesgos necesaria                         |                                                         |
+|                          | a los objetivos del                                             |                                                                                 | - Plan de gestión del proyecto actualizado             |                                                         |
+|                          | proyecto. Se realizará                                          |                                                                                 | - Registro de riesgos actualizado                      |                                                         |
+|                          | después de los procesos                                         |                                                                                 |                                                        |                                                         |
+|                          | de análisis cualitativo de riesgos y análisis cuantitativo de   |                                                                                 |                                                        |                                                         |
+|                          | riesgos. Se deberá abordar los riesgos en función de su         |                                                                                 |                                                        |                                                         |
+|                          | prioridad, introduciendo recursos y actividades en el           |                                                                                 |                                                        |                                                         |
+|                          | presupuesto, cronograma y plan de gestión del proyecto,         |                                                                                 |                                                        |                                                         |
+|                          | según sea necesario.                                            |                                                                                 |                                                        |                                                         |
++--------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+
+| Controlar y monitorizar  | Se deberá controlar los disparadores de riesgos, gestionar los  | - Plan de gestión de riesgos                                                    | - Documentación adicional sobre riesgos del proyecto,  | - Registro de riesgos                                   |
+| riesgos                  | riesgos identificados, realizar seguimientos sobre los riesgos  | - Plan de respuesta a los riesgos                                               |   incluyendo planes temporales, planes de acción       | - Auditorías de los riesgos                             |
+|                          | residuales, descubrir nuevos riesgos, ejecutar planes de        | - Comunicación del proyecto                                                     |   correctiva, solicitudes de cambio.                   | - Medición del rendimiento                              |
+|                          | respuesta de riesgos y evaluar la efectividad de las acciones   | - Cambios de alcance                                                            | - Lecciones aprendidas                                 | - Reuniones sobre el estado de la situación             |
+|                          | de respuesta.                                                   | - Identificación y análisis de riesgos adicionales                              | - Actualizaciones de información de riesgos, planes de |                                                         |
+|                          |                                                                 | - Registro de riesgos                                                           |   respuesta y estado de registro de riesgos            |                                                         |
+|                          |                                                                 | - Solicitudes de cambio aprobadas                                               | - Plan de gestión del proyecto actualizado             |                                                         |
+|                          |                                                                 | - Informes de rendimiento                                                       | - Acciones correctivas y preventivas recomendadas      |                                                         |
++--------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+
+| Cierre de gestión de     | Compartir lecciones aprendidas es un recurso muy valioso en el  | - Plan de gestión de riesgos                                                    | - Lecciones aprendidas documentadas en un informe del  | Registro de riesgos                                     |
+| riesgos                  | ámbito de la gestión de riesgos. Estas lecciones pueden         | - Planes de respuesta a los riesgos desde el registro de riesgos                |   cierre del proyecto.                                 |                                                         |
+|                          | proporcionar experiencia general sobre el proceso de gestión de | - Comunicación de riesgos                                                       | - Mejoras registradas para el proceso, plantillas y    |                                                         |
+|                          | riesgos y su relación con las salidas del proyecto. Las         | - Realimentación del equipo                                                     |   herramientas de la gestión de riesgos                |                                                         |
+|                          | lecciones aprendidas deberían se capturadas a lo largo de todo  |                                                                                 | - Mejoras registradas para otros procesos del          |                                                         |
+|                          | el ciclo de vida del proyecto, no solamente en esta última      |                                                                                 |   proyecto, plantillas y herramientas                  |                                                         |
+|                          | etapa de cierre del proyecto.                                   |                                                                                 |                                                        |                                                         |
++--------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+
 
 Gestión, monitorización y mitigación de riesgos
 ===============================================
