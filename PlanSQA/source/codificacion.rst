@@ -61,10 +61,11 @@ Generación y/o limpieza de código
 * La documentación del código se hará antes del inicio de cada método o inicio de cada clase. 
 * La documentación del código debe añadir claridad al código. Debe contar el porqué o la finalidad y no el cómo. 
 * Los comentarios se realizarán, solo en caso que sea necesario la comprensión del funcionamiento.
-* Cuando una línea no quepa en una única línea se debe fraccionar atendiendo a estos principios generales : 
+* Cuando una línea no quepa en una única línea se debe fraccionar atendiendo a estos principios generales: 
     
-    * Fraccionar después de una coma. 
-    * Fraccionar después de un operador. 
+    Fraccionar después de una coma. 
+    
+    Fraccionar después de un operador. 
 
 * Utilizar una misma indentación de caracteres para cada nueva línea generada. 
 * Establecer un valor de longitud máxima para las líneas. 
@@ -85,13 +86,13 @@ Generación y/o limpieza de código
 Refactoring y optimización 
 --------------------------
 
-* Métodos   con   nombres   bien   significativos   (intention   revealing,   que   revelen exactamente el propósito para el que fueron creados). 
+* Métodos con nombres bien significativos (intention revealing, que revelen exactamente el propósito para el que fueron creados). 
 * Métodos y clases con responsabilidades claras y bien definidas.
 * Alta cohesión y bajo acoplamiento.
-* Pocas   variables   de   instancia:   hay   que   evaluar   el   costo­-beneficio   de   tener   en  variables   valores   que   puedan   calcularse,   como   el   total   de   deuda   de   un   cliente,   o   la  cantidad de hijos de un empleado.
+* Pocas variables de instancia: hay que evaluar el costo­-beneficio de tener en  variables valores que puedan calcularse, como el total de deuda de un cliente, o la  cantidad de hijos de un empleado.
 * Hacer uso de patrones por ejemplo Singleton, MVC, etc. si se presenta un problema de estos tipos.
-* Evitar   tener   objetos   anémicos,   con   pocas   responsabilidades   que   se   parecen   a  estructuras de datos. 
-* Es   preferible   tener   objetos   simples   antes   que   un   objeto   complejo   con   muchas  responsabilidades (sobre todo si los objetos simples pueden intercambiarse).
+* Evitar tener objetos anémicos, con pocas responsabilidades que se parecen a  estructuras de datos. 
+* Es preferible tener objetos simples antes que un objeto complejo con muchas  responsabilidades (sobre todo si los objetos simples pueden intercambiarse).
 * Hacer uso de Herencia y Polimorfismo.
 * Evitar ciclos de dependencia entre objetos si no son necesarios.
 * Hacer uso de Excepciones para manejo de errores.
@@ -103,11 +104,11 @@ Refactoring y optimización
 * Las importaciones deben estar en líneas separadas.
 * Las importaciones deben estar agrupadas en el siguiente orden:
 			
-            1. importaciones de la librería estándar
-			1. importaciones terceras relacionadas
-			1. importaciones locales de la aplicación / librería
-		
-        Deberías poner una línea en blanco entre cada grupo.
+    1. importaciones de la librería estándar
+
+    2. importaciones terceras relacionadas
+
+    3. importaciones locales de la aplicación / librería
 
 * Evita usar espacios en blanco extraños.
 * Siempre rodea estos operadores binarios con un espacio en cada lado: asignación (=), asignación de aumentación (+=, -=, etc.), comparaciones (==, <, >, !=, <>, <=, >=, in, not in, is, is not), “Booleans” (and, or, not).
@@ -121,8 +122,7 @@ Refactoring y optimización
 * Las constantes son generalmente definidas a nivel módulo, escritas con todas las letras en mayúscula y con guiones bajos separando palabras.
 * No compares valores del tipo boolean con True o False usando ==.
 * Es recomendable limpiar el código, el código que ya no es útil debe eliminarse.
-* En el caso de utilizar un framework como Django, la lógica de la aplicación debe estar contenida en el modelo (es la fuente única y definitiva de información de los datos. Contiene los campos y comportamiento esenciales de los datos que se están almacenando.) y no en las vistas (Cada vista es responsable de hacer una de dos cosas: Devolver un objeto HttpResponse con el contenido de la página solicitada o lanzar una excepción como Http404.
-    Generalmente, una vista recupera datos de acuerdo a los parámetros que le hemos pasado, primero carga la plantilla y la rellena con los datos recuperados.).
+* En el caso de utilizar un framework como Django, la lógica de la aplicación debe estar contenida en el modelo (es la fuente única y definitiva de información de los datos. Contiene los campos y comportamiento esenciales de los datos que se están almacenando.) y no en las vistas (Cada vista es responsable de hacer una de dos cosas: Devolver un objeto HttpResponse con el contenido de la página solicitada o lanzar una excepción como Http404. Generalmente, una vista recupera datos de acuerdo a los parámetros que le hemos pasado, primero carga la plantilla y la rellena con los datos recuperados.).
 * Es recomendable utilizar el archivo style.css para personalizar la apariencia de la aplicación.
 * Es recomendable separar en Módulos, en lugar de tener un único archivo con todo el código.
 * Es recomendable diseñar las interfaces de forma coherente:
@@ -133,7 +133,7 @@ Refactoring y optimización
 * Ubicar los componentes de la interfaz de forma que sea predecible la navegabilidad de la misma.
 * Colocar los botones (cancelar o confirmar una operación) a la derecha de la interfaz o a la izquierda, no se pueden tener en una interfaz a la derecha y en otra a la izquierda, es molesto.
 
-Codificación HTML, CSS  y JavaScript
+Codificación HTML, CSS y JavaScript
 ------------------------------------
 
 En lo que refiere a la codificación en HTML, CSS y JavaScript se definen las siguientes recomendaciones:

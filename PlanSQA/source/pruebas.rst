@@ -73,8 +73,6 @@ Busca asegurar que el código funciona de acuerdo con las especificaciones y que
 
 Responsable:
 
-
-
 Pasos:
 El encargado de diseñar y realizar esta prueba puede ser uno de los desarrolladores del sistema.  
 
