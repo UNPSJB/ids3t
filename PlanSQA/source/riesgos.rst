@@ -156,6 +156,7 @@ En el siguiente gráfico se puede observar cómo están relacionadas estas activ
 |                          |                             | * Plan de gestión de proyectos (WBS, agenda,  |                          | documentación             |
 |                          |                             | recursos, requisitos, alcance, diseño,..)     |                          |                           |
 |                          |                             | * Información histórica: lecciones aprendidas |                          |                           |
+|                          |                             |                                               |                          |                           |
 +--------------------------+-----------------------------+-----------------------------------------------+--------------------------+---------------------------+
 | Analizar Riesgos         | Se deberá evaluar los       | * Plan de gestión de riesgos                  | * Registro de riesgos    | * Evaluación de           |
 |                          | riesgos identificados en la | * Lista de riesgos identificados              | actualizado              | probabilidad e impacto de |   
