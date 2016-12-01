@@ -158,7 +158,8 @@ En el siguiente gráfico se puede observar cómo están relacionadas estas activ
 |                          |                             | * Información histórica: lecciones aprendidas |                          |                           |
 +--------------------------+-----------------------------+-----------------------------------------------+--------------------------+---------------------------+
 | Analizar Riesgos         | Se deberá evaluar los       | * Plan de gestión de riesgos                  | * Registro de riesgos    | * Evaluación de           |
-|                          | riesgos identificados en la | * Lista de riesgos identificados              | actualizado              | probabilidad e impacto de |   |                          | fase anterior para          | (registro de riesgos)                         | * Lista de riesgos       | los riesgos.              |
+|                          | riesgos identificados en la | * Lista de riesgos identificados              | actualizado              | probabilidad e impacto de |   
+|                          | fase anterior para          | (registro de riesgos)                         | * Lista de riesgos       | los riesgos.              |
 |                          | determinar la probabilidad  | * Suposiciones                                | priorizados por impacto  | * Matriz de probabilidad  |
 |                          | de que ocurran, el impacto  | * Juicio de expertos                          | y probabilidad           | e impacto.                |
 |                          | del riesgo, el impacto      | * Enunciado del alcance del proyecto          |                          | * Evaluación de la        |
