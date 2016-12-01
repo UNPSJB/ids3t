@@ -176,7 +176,7 @@ Tras realizar el cambio se comunicará, si así está establecido, a todos aquel
 
 En el siguiente gráfico ilustra este proceso de control de cambios:
 
-.. figure:: _static/controlddcambios.png
+.. figure:: _static/controldecambios.png
     :scale: 80%
     :align: center
 
