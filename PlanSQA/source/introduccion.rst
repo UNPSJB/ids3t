@@ -102,3 +102,14 @@ El responsable de SQA tiene la libertad de reportar anomalías y no conformidade
 * Implementar las actividades de calidad de acuerdo al plan de SQA.
 * Resolver los problemas detectados por SQA relacionados con SCM.
 * Implementar las prácticas, procesos y procedimientos definidos en el plan de SCM y en otros planes o documentos complementarios.
+
++------------------------+-----------+----------------+-----------------------+-------------------+------------+----------+-----+
+| **Plan SQA**           | Admin SQA | Admin Proyecto | Adm. de Configuración | Desarrollo/Diseño | Pruebas SW | Plan SQA | Req |
++========================+===========+================+=======================+===================+============+==========+=====+
+| Desarrollar /          |  X        |    X           |                       |                   |            |          |     |
+| Documentar el Plan SQA |           |                |                       |                   |            |          |     |
++------------------------+-----------+----------------+-----------------------+-------------------+------------+----------+-----+
+| Revisar el Plan SQA    | X         | X              | X                     | X                 | X          | X        | X   |
++------------------------+-----------+----------------+-----------------------+-------------------+------------+----------+-----+
+| Aprobar el Plan SQA    | X         | X              |                       |                   |            |          |     |
++------------------------+-----------+----------------+-----------------------+-------------------+------------+----------+-----+
