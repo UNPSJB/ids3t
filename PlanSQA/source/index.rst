@@ -9,6 +9,7 @@ Plan de Aseguramiento de la Calidad de Software
 .. toctree::
    :maxdepth: 3
 
+   revisiones
    introduccion
    requerimientos
    diseno
@@ -16,13 +17,10 @@ Plan de Aseguramiento de la Calidad de Software
    pruebas
    configuracion
    riesgos
-   estilos
 
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
-
