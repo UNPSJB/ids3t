@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+# -*- coding: utf-8 -*-
 #
 # Plan de Aseguramiento de la Calidad de Software documentation build configuration file, created by
 # sphinx-quickstart on Wed Oct 26 15:16:16 2016.
