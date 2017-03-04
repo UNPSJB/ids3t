@@ -1,6 +1,6 @@
 .. include:: global.rst
 
-.. _requerimientos:
+.. _requerimientos no funcionales:
 
 *****************************
 Requerimientos no funcionales
@@ -58,4 +58,14 @@ Además existen otros menos usados pero igual de importantes:
 * Eficiencia y Simplicidad.
 
 A continuación se describen las principales características no funcionales que debe contener un sistema.
+
+**Interfaces de Usuario**: Los formularios y demás herramientas de apoyo deben ser intuitivos al usuario, debe existir la posibilidad de solicitar ayuda, su despliegue frente al usuario debe ser rápido, en el caso que sea una aplicación web debe permitir su navegación a través de los navegadores más comunes como Mozilla Firefox, Google Chrome e Internet Explorer y en las diferentes plataformas (Windows, Mac, Linux), deber ser autoajustable a cualquier tamaño y resolución de pantalla del usuario, debe utilizar imágenes optimizadas y componentes de diseño que permitan mostrar la información de manera dinámica, ágil y estética. 
+
+Se debe considerar el diseño de interfaces para dispositivos móviles (celulares, tablets, etc.). 
+
+**Requerimientos de desempeño**: Los tiempos de respuesta relacionados con formularios de manejo de información, adición, modificación, eliminación, consulta de registros, autenticación y emisión de avisos y confirmaciones por parte del usuario, en forma general, no deben ser superiores a 2.5 segundos, los informes y consultas que presenten una complejidad mediana no deben exceder el tiempo de 4 segundos. 
+
+**Integridad**: El modelo de seguridad debe estar presente en cada una de las capas del sistema, garantizando el acceso autorizado a la información. No deben existir “puertas traseras” que permitan el manejo de información fuera del flujo lógico del sistema. Se requiere la encriptación de los principales datos almacenados en la base de datos. De igual forma se debe proveer un mecanismo de aseguramiento de integridad de toda la información registrada en la base de datos. Esta integridad, debe ser estructural y referencial.
+
+**Control de Acceso Externo**: Se debe considerar que parte de la infraestructura presenta un esquema basado en redes seguras en donde se dispone de Firewalls mediante los cuales el manejo de puertos y protocolos son administrados desde este punto, y no desde los sistemas de información. 
 
