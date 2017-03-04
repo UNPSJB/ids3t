@@ -13,7 +13,7 @@ Esta sección es una guía para la correcta gestión de los requerimientos no fu
 Alcance
 =======
 
-Los requerimientos no funcionales  se refieren a todos los requisitos que no describen información a guardar, ni funciones a realizar, sino características de funcionamiento.
+Los requerimientos no funcionales  se refieren a todos los requerimientos que no describen información a guardar, ni funciones a realizar, sino características de funcionamiento.
 
 Requerimientos No Funcionales
 =============================
@@ -68,4 +68,14 @@ Se debe considerar el diseño de interfaces para dispositivos móviles (celulare
 **Integridad**: El modelo de seguridad debe estar presente en cada una de las capas del sistema, garantizando el acceso autorizado a la información. No deben existir “puertas traseras” que permitan el manejo de información fuera del flujo lógico del sistema. Se requiere la encriptación de los principales datos almacenados en la base de datos. De igual forma se debe proveer un mecanismo de aseguramiento de integridad de toda la información registrada en la base de datos. Esta integridad, debe ser estructural y referencial.
 
 **Control de Acceso Externo**: Se debe considerar que parte de la infraestructura presenta un esquema basado en redes seguras en donde se dispone de Firewalls mediante los cuales el manejo de puertos y protocolos son administrados desde este punto, y no desde los sistemas de información. 
+
+Se debe considerar aspectos de seguridad relacionados a su utilización a través de redes públicas, garantizando la confidencialidad e integridad de la información y acceso a ella. 
+
+**Auditoría**: Se debe implementar el registro de acciones realizadas por los usuarios a las principales transacciones (usuario, fecha, hora) y registros del sistema en lo relacionado con la creación, modificación y eliminación. 
+
+**Flexibilidad**: La configuración de los parámetros de instalación no debe requerir modificaciones al código fuente de la instalación.
+
+Debe ser totalmente independiente de la topología de red utilizada, es decir, el sistema debe poder funcionar en múltiples esquemas de comunicación, tanto para equipos conectados remotamente, como para equipos conectados por una red LAN, WAN o Internet y todas las combinaciones anteriormente descritas. 
+
+**Disponibilidad**: El sistema no debe presentar ningún punto de fallo, es decir, debe estar provisto de mecanismos o componentes que aseguren la continuidad del servicio.
 
