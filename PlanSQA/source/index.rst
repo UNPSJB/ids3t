@@ -12,6 +12,7 @@ Manual de Aseguramiento de la Calidad de Software
    revisiones
    introduccion
    requerimientos
+   requerimientos no funcionales
    diseno
    codificacion
    pruebas
