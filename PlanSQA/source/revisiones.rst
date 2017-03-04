@@ -23,3 +23,9 @@ Historia de revisiones
 |                      |             |                                                | - MARTINOVIC, Andrés            |
 |                      |             |                                                | - WILLIAMS, Eloy                |
 +----------------------+-------------+------------------------------------------------+---------------------------------+
+| 04/03/2017           | 1.2         | Agregado apartado Requerimientos no funcionales| - CARABAJAL, Diego              |
+|                      |             | Agregada métrica Complejidad Ciclomática en la |                                 |
+|                      |             | sección herramientas del apartado Codificación |                                 |    
+|                      |             | Modificación del nombre Plan SQA               |                                 |                   
++----------------------+-------------+------------------------------------------------+---------------------------------+
+
