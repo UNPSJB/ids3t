@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Plan de Aseguramiento de la Calidad de Software'
-#copyright = '2016, Ingeniería de Software 3t'
+copyright = '2016, Ingeniería de Software 3t'
 author = 'Ingeniería de Software 3t'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -346,10 +346,10 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-#epub_title = project
-#epub_author = author
-#epub_publisher = author
-#epub_copyright = copyright
+epub_title = str(project)
+epub_author = author
+epub_publisher = author
+epub_copyright = copyright
 
 # The basename for the epub file. It defaults to the project name.
 # epub_basename = project
