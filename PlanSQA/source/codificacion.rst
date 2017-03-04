@@ -216,13 +216,49 @@ A fin de evaluar el trabajo del equipo durante el proceso de desarrollo, se sugi
     N1: el número total de veces que aparece el operador
     N2: el número total de veces que aparece el operando
 
+**Complejidad Ciclomática**: Es una métrica del software que proporciona una medición cuantitativa de la complejidad lógica de un programa. Es una de las métricas de software de mayor aceptación, ya que ha sido concebida para ser independiente del lenguaje.
+
+Una vez calculada la complejidad ciclomática de un fragmento de código, se puede determinar el riesgo que supone utilizando los rangos definidos en la siguiente tabla:
+
++-------------------------------+----------------------------------------+
+| **Complejidad Ciclomática**   | **Evaluación del Riesgo**              | 
++===============================+========================================+
+| 1-5                           | Programa Simple, sin mucho riesgo      |
++-------------------------------+----------------------------------------+
+| 11-20                         | Más complejo, riesgo moderado          |
++-------------------------------+----------------------------------------+
+| 21-50                         | Complejo, Programa de alto riesgo      |
++-------------------------------+----------------------------------------+
+| > 50                          | Programa no testeable, Muy alto riesgo |
++-------------------------------+----------------------------------------+
+
+A partir del análisis de muchos proyectos se encontró que un valor 10 es un límite superior práctico para el tamaño de un módulo. Cuando la complejidad supera dicho valor se hace muy difícil probarlo, entenderlo y modificarlo.
+
+La complejidad ciclomática tiene fundamentos en la teoría de gráficos y proporciona una medición de software extremadamente útil. 
+
+La complejidad se calcula en una de tres formas:
+
+1. El número de regiones del gráfico de flujo corresponde a la complejidad ciclomática.
+
+2. La complejidad ciclomática V(G) para un gráfico de flujo G se define como V(G) = E - N + 2 donde E es el número de aristas del gráfico de flujo y N el número de nodos del gráfico de flujo.
+
+3. La complejidad ciclomática V(G) para un gráfico de flujo G también se define como V(G) = P + 1 donde P es el número de nodos predicado contenidos en el gráfico de flujo G. 
+
+En definitiva, la complejidad ciclomática (V(G)) por método o función representa el grado de facilidad o dificultad para entender modificar o corregir un método o función dentro de un programa. Esta complejidad aumenta con el número de caminos que el programa pueda seguir. Se recomienda mantener éste valor menor a 6
+
 Herramientas
 ============
 
 Las herramientas que se sugieren para la producción de código son:
 
 * Pycharm: entorno de desarrollo para Python que permite gestionar fácilmente la estructura del proyecto, la escritura de código (provee autocompletado) y cuestiones adicionales como manejo de Git integrado.
+
 * Sublime + plugins Anaconda for Python: editor de texto base que permite escribir código Python haciendo uso de los bondades que ofrece una serie de plugins adicionales, como Anaconda, que permiten el autocompletado, la detección de errores y otras características.
+
 * Flake: herramienta para Python que permite determinar si un fuente cumple con la especificación PEP8 recomendada anteriormente. Aquellos aspectos que no cumplen, son marcados para su corrección.
+
 * Sphinx: herramienta que permite la construcción de la documentación de manera inteligente y agradable tanto para los usuarios como los programadores. Provee una serie de extensiones para la inclusión de los docstrings de Python, estructuración jerárquica de contenido con posibilidad de links y otras características.
+
 * Sass o Less: cuando el CSS empleado a lo largo del proyecto sea demasiado y muchas veces repetitivo, se sugiere el empleo de un lenguaje dinámico de CSS que permite la escalabilidad del mismo.
+
+* Radon: Herramienta de python que calcula varias métricas del código. Puede utilizarse desde la línea de comandos o mediante programación a través de su API
