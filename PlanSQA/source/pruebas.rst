@@ -105,7 +105,7 @@ Para llevar a cabo dichas pruebas, se empleará un enfoque de Pruebas de Integra
 
 *Integración Descendente*: Se integran los módulos moviéndose hacia abajo por la jerarquía de control, comenzando por el módulo de control principal (programa principal). Los módulos subordinados al módulo de control principal se van incorporando en la estructura, bien de forma primero en profundidad, o bien de forma primero en anchura.
 
-.. figure:: _static/integraciondescendente.jpg
+.. figure:: _static/integraciondescendente.png
     :scale: 80%
     :align: center
  
@@ -128,7 +128,7 @@ El proceso continúa desde el paso dos hasta que se haya construido la estructur
 
 La integración sigue el esquema de la siguiente figura:
 
-.. figure:: _static/integracionascendente.jpg
+.. figure:: _static/integracionascendente.png
     :scale: 80%
     :align: center
 

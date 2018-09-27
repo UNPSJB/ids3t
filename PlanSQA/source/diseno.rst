@@ -69,7 +69,7 @@ El siguiente esquema ofrece una estructuración básica que deberá tener una GU
 * Menú: se presentan las opciones de navegación de la página
 * Pie de Página: se muestra información respecto al creador de la página y derechos de copyright.
 
-.. figure:: _static/interfaces.gif
+.. figure:: _static/interfaces.png
     :scale: 80%
     :align: center
 
