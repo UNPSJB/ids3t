@@ -238,7 +238,7 @@ Estas ramas ayudan a hacer las modificaciones de forma más eficiente y a correg
 
 Estas ramas son empleadas para la limpieza de todo lo producido, es decir, tanto a nivel de código como a nivel de documentación. En lo que respecta a la documentación, permite acomodar formato de la misma eliminación de errores de redacción, etc. A nivel de código permite eliminar piezas de código que no se ajusten a los estándares recomendados, que no cumplan con los requerimientos, etc.
 	 	 	
-*Optimization​*
+*Optimization*
 
 Estas ramas son empleadas para la optimización tanto a nivel de documentación como de código. En el caso de la documentación implica la reelaboración de aquella documentación que no se corresponda con la realidad. En el caso del código, implica la optimización de rutina de código sin impactar sobre la funcionalidad de la misma.
 
