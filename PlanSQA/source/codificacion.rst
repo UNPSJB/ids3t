@@ -99,15 +99,14 @@ Refactoring y optimización
 * Comentar el código extenso.
 * Crear script (setup) para la instalación de todos los paquetes necesarios para poder usar la aplicación. Por ejemplo, en el caso de python se puede emplear la utilidad pip freeze sobre el directorio de trabajo para identificar todos los paquetes empleados por el software.
 * Cuando el lenguaje empleado para realizar el desarrollo lo permita, emplear el/los estándar/es definidos actualmente. Por ejemplo, en el caso de Python se sugiere emplear el Estándar pep8 que define cuestiones como:
-* Las líneas de continuación deben alinearse verticalmente con el carácter que se ha utilizado (paréntesis, llaves, corchetes) o haciendo uso de la “hanging indent” (aplicar tabulaciones en todas las líneas con excepción de la primera).
-* Nunca mezcles tabulaciones y espacios.
-* Las importaciones deben estar en líneas separadas.
-* Las importaciones deben estar agrupadas en el siguiente orden:
-			
+
+  * Las líneas de continuación deben alinearse verticalmente con el carácter que se ha utilizado (paréntesis, llaves, corchetes) o haciendo uso de la “hanging indent” (aplicar tabulaciones en todas las líneas con excepción de la primera).
+  * Nunca mezcles tabulaciones y espacios.
+  * Las importaciones deben estar en líneas separadas.
+  * Las importaciones deben estar agrupadas en el siguiente orden:
+
     1. importaciones de la librería estándar
-
     2. importaciones terceras relacionadas
-
     3. importaciones locales de la aplicación / librería
 
 * Evita usar espacios en blanco extraños.
@@ -126,12 +125,13 @@ Refactoring y optimización
 * Es recomendable utilizar el archivo style.css para personalizar la apariencia de la aplicación.
 * Es recomendable separar en Módulos, en lugar de tener un único archivo con todo el código.
 * Es recomendable diseñar las interfaces de forma coherente:
-* Evitar asignar nombres e iconos diferentes a botones con acciones similares.
-* Evitar botones con fondo de color y botones sin fondo.
-* Usar un solo idioma para el texto de los componentes de la interfaz.
-* Es recomendable enmarcar los componentes pertenecientes a datos o acciones de un objeto determinado, para diferenciar de los de otro objeto que también está presente en la interfaz.
-* Ubicar los componentes de la interfaz de forma que sea predecible la navegabilidad de la misma.
-* Colocar los botones (cancelar o confirmar una operación) a la derecha de la interfaz o a la izquierda, no se pueden tener en una interfaz a la derecha y en otra a la izquierda, es molesto.
+
+  * Evitar asignar nombres e iconos diferentes a botones con acciones similares.
+  * Evitar botones con fondo de color y botones sin fondo.
+  * Usar un solo idioma para el texto de los componentes de la interfaz.
+  * Es recomendable enmarcar los componentes pertenecientes a datos o acciones de un objeto determinado, para diferenciar de los de otro objeto que también está presente en la interfaz.
+  * Ubicar los componentes de la interfaz de forma que sea predecible la navegabilidad de la misma.
+  * Colocar los botones (cancelar o confirmar una operación) a la derecha de la interfaz o a la izquierda, no se pueden tener en una interfaz a la derecha y en otra a la izquierda, es molesto.
 
 Codificación HTML, CSS y JavaScript
 ------------------------------------
