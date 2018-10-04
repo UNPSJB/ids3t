@@ -1,0 +1,557 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pruebas &#8212; documentación de Plan de Aseguramiento de la Calidad de Software - 1.1</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Gestión de la Configuración" href="configuracion.html" />
+    <link rel="prev" title="Codificación y Producción de Contenido" href="codificacion.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="pruebas">
+<span id="id1"></span><h1>Pruebas<a class="headerlink" href="#pruebas" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En esta sección se detalla el plan de pruebas que se utilizará para planear y controlar los esfuerzos de pruebas del proyecto.</p>
+</div>
+<div class="section" id="alcazce">
+<h2>Alcazce<a class="headerlink" href="#alcazce" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta sección cubre la confección del plan de pruebas, detalles de cada prueba y resultados que debería proveer.</p>
+</div>
+<div class="section" id="objetivo">
+<h2>Objetivo<a class="headerlink" href="#objetivo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta sección estructura y documenta la planificación de las pruebas del sistema a realizar, así como la estrategia a utilizar para su ejecución.</p>
+</div>
+<div class="section" id="plan-de-prueba">
+<h2>Plan de prueba<a class="headerlink" href="#plan-de-prueba" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El propósito del plan de pruebas es proveer la información necesaria para planear y controlar los esfuerzos de pruebas de un proyecto o iteración específicas. Describe el enfoque para probar el software  y es el plan general generado y utilizado por administradores para dirigir el esfuerzo de pruebas.</p>
+<p>Se debe tener en cuenta, a la hora de definir un plan de prueba, que es lo que se va a probar, es decir describir el objeto de prueba y que es lo que se va a probar del mismo (una lista de las características y descripción del sistema, sus componentes tomados por separado, etc).</p>
+<p>Se debe establecer qué estrategias se van a utilizar para las mismas (técnica, patrones y/o herramientas a utilizar). Por ejemplo, en el caso de pruebas unitarias de un procedimiento, esta sección podría indicar: «Se aplicará la estrategia caja-negra de fronteras de la precondición» o «Ejercicio de los caminos ciclomaticos válidos». En lo posible, la estrategia debe precisar el número mínimo de casos de prueba a diseñar; por ej. 100% de las fronteras, 60% de los caminos ciclomaticos, etc. La estrategia también explicita el grado de automatización que se exigirá, tanto para la generación de casos de prueba como para su ejecución.</p>
+<p>Se deberán establecer las secuencias de actividades, como la definición de los tiempos para la preparación de las pruebas, la ejecución de las pruebas hasta el análisis de resultados de la pruebas en el contexto de las fases previstas del desarrollo. Además se deberá disponer de toda la documentación necesaria, la plataforma de pruebas preparada (banco de pruebas) y la integridad del desarrollo de la funcionalidad requerida.</p>
+<p>Se deberá categorizar la configuración, es decir explicitar las condiciones bajo las cuales, el plan debe ser:</p>
+<ul class="simple">
+<li>Suspendido.</li>
+<li>Repetido.</li>
+<li>Culminado.</li>
+</ul>
+<p>En algunas circunstancias (las cuales deben ser explicitadas) el proceso de prueba debe suspenderse en vista de los defectos o fallas que se han detectado. Al corregirse los defectos, el proceso de prueba previsto por el plan puede continuar, pero debe explicitarse a partir de qué punto, ya que puede ser necesario repetir algunas pruebas. Los criterios de culminación pueden ser tan simples como aprobar el número mínimo de casos de prueba diseñados o tan complejos como tomar en cuenta no sólo el número mínimo, sino también el tiempo previsto para las pruebas y la tasa de detección de fallas.</p>
+<p>Se tendrán que explicitar los documentos a entregarse al culminar el proceso previsto por el plan de prueba por ejemplo: subplanes, especificación de pruebas, casos de prueba, resumen gerencial del proceso y bitácora de pruebas.</p>
+<p>Este plan de pruebas soporta los siguientes objetivos:</p>
+<ul class="simple">
+<li>Identificar los ítems a probar</li>
+<li>Describe, en términos generales, el enfoque de pruebas a ser usado</li>
+<li>Identifica los recursos requeridos y provee un estimado de sus esfuerzos</li>
+<li>Lista los entregables de las pruebas del proyecto</li>
+<li>Identificar los tipos de pruebas a utilizar en la ejecución de las mismas.</li>
+<li>Diseñar cada una de las pruebas de cada una de las iteraciones a probar.</li>
+</ul>
+<div class="section" id="tipos-de-prueba">
+<h3>Tipos de prueba<a class="headerlink" href="#tipos-de-prueba" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="pruebas-de-la-implementacion-y-de-unidad">
+<h4>Pruebas de la implementación y de unidad<a class="headerlink" href="#pruebas-de-la-implementacion-y-de-unidad" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Será objeto de estas pruebas verificar la funcionalidad y estructura de cada componente individualmente, una vez que estos han sido codificados.
+Para poder llevar a cabo estas pruebas es preciso:</p>
+<ul class="simple">
+<li>Garantizar que el proceso de codificación, las revisiones asociadas y la prueba de unidad sean conducidos de acuerdo a los estándares y procedimientos  establecidos en el plan de proyecto.</li>
+<li>Asegurar la incorporación de los resultados de las revisiones en los entregables de esta fase.</li>
+<li>Verificar la implementación de las acciones correctivas derivadas de la prueba de unidad.</li>
+<li>Comprobar la utilización de la especificación de procedimientos y casos de prueba durante la prueba de unidad.</li>
+<li>Corroborar la documentación del código y de los resultados de la prueba de unidad.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Objetivo de la Prueba:</td>
+<td>Se focaliza en ejecutar cada módulo (o unidad mínima a ser probada, ej = una clase) lo que provee un mejor modo de manejar la integración de las unidades en componentes mayores.
+Busca asegurar que el código funciona de acuerdo con las especificaciones y que el módulo lógico es válido.</td>
+</tr>
+<tr class="row-even"><td>Responsable:</td>
+<td>El encargado de diseñar y realizar esta prueba puede ser uno de los desarrolladores del sistema.</td>
+</tr>
+<tr class="row-odd"><td>Pasos:</td>
+<td><ol class="first last arabic simple">
+<li>Determinar el ambiente de prueba.</li>
+<li>Particionar el sistema en módulos de unidades lógicas fáciles de probar.</li>
+<li>Por cada unidad hay que definir los casos de prueba (pruebas de caja blanca).</li>
+<li>Para esto los casos de prueba deben diseñarse de forma tal que se recorran todos los caminos de ejecución posibles dentro del código bajo prueba; por lo tanto el diseñador debe construirlos con acceso al código fuente de la unidad a probar.</li>
+<li>Los aspectos a considerar son los siguientes: Rutinas de excepción, Rutinas de error, Manejo de parámetros, Validaciones, Valores válidos, Valores límites, Rangos, Mensajes posibles.</li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td>Técnica:</td>
+<td><ul class="first last simple">
+<li>Comparar el resultado esperado con el resultado obtenido.</li>
+<li>Si existen errores, reportarlos.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Criterio de Completitud:</td>
+<td><ul class="first last simple">
+<li>Todas las pruebas planeadas han sido ejecutadas.</li>
+<li>Todos los defectos que se identificaron han sido tenidos en cuenta.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pruebas-de-integracion">
+<h4>Pruebas de Integración<a class="headerlink" href="#pruebas-de-integracion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Será objeto de estas pruebas verificar el correcto ensamblaje de los distintos módulos que componen la aplicación, una vez que han sido probados unitariamente, con el fin de comprobar que interactúan correctamente a través de sus interfaces internas y externas, que cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales.</p>
+<p>Las pruebas deberán asegurar que:</p>
+<ul class="simple">
+<li>El funcionamiento integrado de módulos interdependientes esté libre de errores.</li>
+<li>Probar todas las dependencias de los módulos.</li>
+<li>Probar el flujo de control y el flujo de datos a través de todas las capas</li>
+</ul>
+<p>Para llevar a cabo dichas pruebas, se empleará un enfoque de Pruebas de Integración Incremental Ascendente, en donde se ejecutarán las siguientes actividades:</p>
+<ul class="simple">
+<li>La combinación de módulos de bajo nivel en grupos que lleven a cabo una misma función o subfunción específica, con el fin de reducir el número de pasos de integración.</li>
+<li>La escritura de módulos impulsores para cada módulo, con el fin de simular la llamada a los módulos, introducir los datos de pruebas y recoger los resultados.</li>
+<li>La prueba de cada módulo con su correspondiente módulo impulsor.</li>
+<li>La eliminación de los módulos impulsores y su correspondiente sustitución por los módulos de nivel superior en la jerarquía.</li>
+</ul>
+<p><em>Integración Descendente</em>: Se integran los módulos moviéndose hacia abajo por la jerarquía de control, comenzando por el módulo de control principal (programa principal). Los módulos subordinados al módulo de control principal se van incorporando en la estructura, bien de forma primero en profundidad, o bien de forma primero en anchura.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/integraciondescendente.png"><img alt="_images/integraciondescendente.png" src="_images/integraciondescendente.png" style="width: 384.0px; height: 280.8px;" /></a>
+</div>
+<p><strong>Integración primero en profundidad</strong>: integra todos los módulos de un camino de control principal de la estructura. Por ejemplo, si se elige el camino de la izquierda se integrarán primero los módulos M1, M2 y M5. A continuación, se integrará M8 o M6. A continuación se construyen los caminos de control central y derecho.</p>
+<p><strong>Integración primero en anchura</strong>: incorpora todos los módulos directamente subordinados a cada nivel, moviéndose por la estructura de forma horizontal.
+Por ejemplo: Los primeros módulos que se integran son M2, M3 y M4. A continuación, sigue el siguiente nivel de control, M5, M6, M7 y por último M8.</p>
+<p>El proceso de integración se realiza en cinco pasos:</p>
+<ol class="arabic simple">
+<li>Se usa el módulo de control principal como controlador de la prueba, disponiendo de resguardos para todos los módulos directamente subordinados al módulo de control principal.</li>
+<li>Dependiendo del enfoque de integración elegido se van sustituyendo uno a uno los resguardos subordinados por los módulos reales.</li>
+<li>Se llevan a cabo pruebas cada vez que se integra un nuevo módulo.</li>
+<li>Tras terminar cada conjunto de prueba, se reemplaza otro resguardo con el módulo real.</li>
+<li>Se hace la prueba de regresión para asegurarse de que no se han introducido errores nuevos.</li>
+</ol>
+<p>El proceso continúa desde el paso dos hasta que se haya construido la estructura del programa entero.</p>
+<p><em>Integración Ascendente</em>: Empieza la construcción y la prueba con los niveles más bajos de la estructura del programa. Dado que los módulos se integran de abajo hacia arriba, el proceso requerido de los módulos subordinados siempre está disponible y se elimina la necesidad de resguardos.</p>
+<p>La integración sigue el esquema de la siguiente figura:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/integracionascendente.png"><img alt="_images/integracionascendente.png" src="_images/integracionascendente.png" style="width: 346.40000000000003px; height: 275.2px;" /></a>
+</div>
+<p>El proceso de integración se realiza mediante los siguientes pasos:</p>
+<ol class="arabic simple">
+<li>Se combinan los módulos de bajo nivel en grupos que realicen una subfunción específica del software.</li>
+<li>Se describe un controlador (un programa de control de la prueba) para coordinar la entrada y la salida de los casos de prueba.</li>
+<li>Se prueba el grupo.</li>
+<li>Se eliminan los controladores y se combinan los grupos moviéndose hacia arriba por la estructura del programa.</li>
+</ol>
+<p>Se combinan los módulos para formar los grupos 1,2 y 3. Cada uno de los grupos se somete a prueba mediante un controlador (mostrado como un bloque punteado). Los módulos de los grupos 1 y 2 son subordinados Ma. Los controladores D1 y D2 se eliminan y los grupos interaccionan directamente con Ma. De forma similar, se elimina el controlador D3 del grupo 3 antes de la integración con el módulo Mb. Tanto Ma como Mb se integrarán finalmente con el módulo Mc y así sucesivamente</p>
+</div>
+<div class="section" id="pruebas-de-regresion">
+<h4>Pruebas de Regresión<a class="headerlink" href="#pruebas-de-regresion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Será objeto de estas pruebas validar que el sistema mantenga su correcta funcionalidad después de que se efectúe un cambio, corrección o nuevo requerimiento.</p>
+<p>Para poder llevar a cabo dicha prueba es preciso:</p>
+<p>Repetir la batería de pruebas (las pruebas unitarias, de integración, funcionales y de carga) definidas con anterioridad al cambio efectuado, para comprobar que la incorporación de los ajustes no crearon errores en el sistema.</p>
+</div>
+<div class="section" id="pruebas-de-stress">
+<h4>Pruebas de Stress<a class="headerlink" href="#pruebas-de-stress" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Será objeto de estas pruebas conocer y mitigar los riesgos relacionados con el mal desempeño de las aplicaciones en el entorno, y efectuar las correcciones necesarias.</p>
+<p>Para poder llevar a cabo estas pruebas es preciso:</p>
+<ul class="simple">
+<li>Cuantificar la capacidad de la infraestructura.</li>
+<li>Validar los requerimientos de performance.</li>
+<li>Validar la escalabilidad de la plataforma.</li>
+</ul>
+<p>Con la definición de estos criterios, se podrá conocer qué cantidad de clientes simultáneos soporta el producto desarrollado y si el hardware empleado es suficiente para soportar el nivel de transacciones propuesto. Además, se podrá evaluar què expectativa de crecimiento soporta el producto.</p>
+</div>
+<div class="section" id="pruebas-de-aceptacion">
+<h4>Pruebas de Aceptación<a class="headerlink" href="#pruebas-de-aceptacion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Será objeto de estas pruebas validar que la solución desarrollada cumpla con el funcionamiento esperado y permitirle al usuario del sistema que verifique su aceptación, desde el punto de vista de la funcionalidad y el rendimiento.</p>
+<p>Para llevar a cabo esta prueba será preciso reunirse con el usuario y probar el software de manera conjunta, registrando aquellos aspectos negativos que indique el usuario y posibles sugerencias.</p>
+</div>
+<div class="section" id="pruebas-del-proceso-de-scm-gestion-de-configuracion">
+<h4>Pruebas del proceso de SCM (Gestión de Configuración)<a class="headerlink" href="#pruebas-del-proceso-de-scm-gestion-de-configuracion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Será objeto de estas pruebas asegurar y garantizar un adecuado control del proceso de los cambios realizados sobre el producto y la disponibilidad constante de una versión estable de cada elemento para toda persona involucrada en el desarrollo</p>
+<p>En este tipo de pruebas el SQA debe:</p>
+<ul class="simple">
+<li>Revisar el plan de SCM.</li>
+<li>Asegurar la correcta identificación de los ítems de configuración.</li>
+<li>Garantizar un adecuado control de cambios.</li>
+<li>Corroborar que la contabilidad del estado de la configuración sea preparada oportunamente y que refleje la situación real de los ítems de configuración en relación con el proyecto.</li>
+<li>Comprobar la adherencia de las actividades de SCM al plan de SCM.</li>
+<li>Verificar el correcto funcionamiento de la librería del software.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="criterios-de-aceptacion">
+<h3>Criterios de aceptación<a class="headerlink" href="#criterios-de-aceptacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li>No se acepta documentación con errores ortográficos.</li>
+<li>No se acepta documentación con un grado de completitud menor al 70% con respecto a los issues del producto.</li>
+<li>No se aceptan las pruebas unitarias que no cumplan los objetivos esperados.</li>
+<li>No se aceptan las pruebas de integración en las que alguna de las pruebas unitarias falle o como resultado final, no se cumpla la funcionalidad establecida en el requerimiento.</li>
+<li>No se aceptan las pruebas de regresión las cuales luego de corregir/agregar una funcionalidad arrojen un resultado distinto.</li>
+</ul>
+<p>Para cada uno de estos ítems, cabe destacar que se acepta el caso contrario al mismo, por ejemplo “Se acepta documentación sin errores ortográficos”.</p>
+</div>
+<div class="section" id="equipo-de-pruebas">
+<h3>Equipo de Pruebas<a class="headerlink" href="#equipo-de-pruebas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La asignación de los roles para los integrantes del equipo de pruebas será:</p>
+<p><strong>Test Lead</strong>
+Esta es la persona   responsable   de   la   supervisión   de   las   pruebas   en   el   proyecto.   También   es
+responsable de los procesos utilizados para garantizar la calidad de la entrega.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Coordinación del equipo de pruebas.</li>
+<li>Representación del equipo de pruebas en varias reuniones.</li>
+<li>La generación de diversos informes.</li>
+<li>La identificación de riesgos, análisis y mitigación.</li>
+<li>Presentar Informes sobre cambios al Test Manager sobre el progreso de la prueba.</li>
+<li>Gestión del repositorio.</li>
+</ul>
+</div></blockquote>
+<p><strong>Test Manager</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Escribe el plan de pruebas.</li>
+<li>Realiza el mantenimiento del plan de prueba.</li>
+<li>Monitorea el progreso de las prueba.</li>
+<li>Toma decisiones sobre la entrada y salida de una prueba.</li>
+<li>Toma decisiones sobre la suspensión / reanudación de las pruebas.</li>
+<li>Toma decisiones sobre cambios en la estrategia de prueba / plan de pruebas.</li>
+</ul>
+</div></blockquote>
+<p><strong>Business Analyst</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Identificar escenarios adecuados para el test de aceptación de usuario.</li>
+<li>Crear casos de pruebas para los test de aceptación de usuario.</li>
+<li>Realizar pruebas funcionales.</li>
+<li>Trabajar con el cliente para definir los requerimientos del negocio.</li>
+</ul>
+</div></blockquote>
+<p><strong>Developers</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Realizar pruebas unitarias.</li>
+<li>Ejecutar las pruebas unitarias.</li>
+<li>Revisiones de código</li>
+<li>Crea los casos y los datos de prueba del sistema.</li>
+<li>Administrar   el   tiempo   a   la   programación   del   proyecto   para   que   todas   las   tareas asignadas se completen a tiempo.</li>
+</ul>
+</div></blockquote>
+<p><strong>Tester</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Ejecutar el plan de pruebas.</li>
+<li>Buscar, informar y seguir errores descubiertos durante las pruebas del sistema.</li>
+<li>Analizar los resultados.</li>
+<li>Realizar Control de la conformidad con:los estándares de codificación, Ayuda  (online, manuales),Pruebas de Navegación, la experiencia del usuario y   pruebas de usabilidad, pruebas de rendimiento, las pruebas de compatibilidad   de plataforma, la prueba de escalabilidad, copia de seguridad   y   restauración,   las pruebas de instalación.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="suspension-y-reanudacion">
+<h3>Suspensión y reanudación<a class="headerlink" href="#suspension-y-reanudacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Cuando se lleve a cabo la ejecución de un set de pruebas y alguno de los elementos de prueba falle (no pase la prueba), se notificará a los responsables del desarrollo de dicho elemento y se suspenderá la prueba hasta tanto se solucionen los inconvenientes.
+Al momento de reanudar las pruebas suspendidas se deberá evaluar, según la complejidad del caso, la necesidad de ejecutar el set de pruebas nuevamente o reanudar desde el punto en el cual se había suspendido.</p>
+</div>
+<div class="section" id="entregables-de-prueba">
+<h3>Entregables de prueba<a class="headerlink" href="#entregables-de-prueba" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los distintos entregables de las pruebas son:</p>
+<ul class="simple">
+<li>Especificación del diseño de pruebas.</li>
+<li>Especificación de casos de prueba.</li>
+<li>Especificación del procedimiento de prueba.</li>
+<li>Resumen del informe de prueba.</li>
+<li>Los datos de entrada y salida de las distintas pruebas.</li>
+<li>Logs de errores.</li>
+</ul>
+</div>
+<div class="section" id="necesidades-ambientales">
+<h3>Necesidades ambientales<a class="headerlink" href="#necesidades-ambientales" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Serán necesarios para un correcto aislamiento de todas las fases en las que puede encontrarse cada versión del sistema, contar con distintos entornos para la ejecución y pruebas del sistema</p>
+<div class="section" id="desarrollo">
+<h4>Desarrollo<a class="headerlink" href="#desarrollo" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Entorno altamente volátil. Los datos serán ingresados por los mismos desarrolladores de acuerdo a las funcionalidades que vayan desarrollando. Es el ambiente de pruebas que utilizarán los desarrolladores</p>
+</div>
+<div class="section" id="id2">
+<h4>Pruebas<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Ambiente de Prueba:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Un BackUp completo antes de la ejecución de cualquier caso de prueba.</li>
+<li>Al finalizar una jornada de pruebas se realiza un backup incremental.</li>
+<li>Al detectar errores de impacto “Crítico” en la aplicación, se realizará backup completo e inmediato de la base de datos  y del sitio de la aplicación, asociándolo a un documento descriptivo del escenario y del caso de prueba que se estaba llevando a cabo. Esto con el fin de poder reproducir estos errores posteriormente sobre un ambiente controlado y facilite la detección de la causa y la corrección del mismo.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="produccion">
+<h4>Producción<a class="headerlink" href="#produccion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Entorno de producción en el que se encontrarán los datos reales y ejecutables estables.
+Excede el entorno de pruebas.</p>
+</div>
+</div>
+<div class="section" id="aspectos-de-ejecucion-de-las-pruebas">
+<h3>Aspectos de ejecución de las pruebas<a class="headerlink" href="#aspectos-de-ejecucion-de-las-pruebas" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="aspectos-de-entrada-y-salida">
+<h4>Aspectos de entrada y salida<a class="headerlink" href="#aspectos-de-entrada-y-salida" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Plan de Prueba, Aspectos de Entrada</p>
+<p>Una vez desarrollado cada uno de los módulos del aplicativo se comenzará a realizar el set de pruebas.
+Set de pruebas completo y claro.
+Claridad en el procedimiento para el desarrollo de las pruebas.
+Tener un entorno de pruebas adecuado.
+Toda la documentación requerida para la realización de las pruebas debe estar disponible.</p>
+<p>Plan de  Prueba, Aspectos de Salida</p>
+<p>El sistemas será sometido a 3 ciclos de pruebas: 1)Pruebas a cada módulo, 2) Pruebas luego de la integración entre módulos, y 3) Pruebas después de corregir  las fallas del segundo ciclo, este último con el fin de asegurar que la corrección  de errores no haya generados unos nuevos.</p>
+</div>
+</div>
+<div class="section" id="definicion-del-entorno-de-pruebas">
+<h3>Definición del Entorno de Pruebas<a class="headerlink" href="#definicion-del-entorno-de-pruebas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El plan de pruebas recogerá las características que debe tener el entorno para la ejecución de pruebas según la información existente del proyecto en el momento de la elaboración del plan.
+Se debe describir el entorno general de las pruebas y en concreto las posibles configuraciones de hardware a utilizar en las pruebas, así como las configuraciones de software y/o combinaciones de ambos.
+Se debe describir la infraestructura que se utilizará para realizar las pruebas, indicando todos los sistemas/subsistemas que se utilicen.
+Los elementos bases siguientes del software se requieren en el ambiente de la prueba para  este plan de prueba.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="38%" />
+<col width="28%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Nombre del elemento software</td>
+<td>Versión</td>
+<td>Tipo y otras notas</td>
+</tr>
+<tr class="row-even"><td>Sistema operativo Windows o distribución Linux.</td>
+<td>Windows 7 o superiores. Distros Linux: -Debian/Ubuntu/Kubuntu</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Navegador web</td>
+<td>Chrome/Firefox/Opera</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Gestor de Base de Datos</td>
+<td>PostgreSql, MySql, SQLlite3</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Herramienta para el seguimiento de errores</td>
+<td>Bugzilla</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Conjunto de datos</td>
+<td>&#160;</td>
+<td>Mínimamente se definirán un conjunto de datos
+que pongan a prueba los casos bordes.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="definir-el-alcance-y-la-estrategia-de-pruebas">
+<h3>Definir el Alcance y la Estrategia de Pruebas<a class="headerlink" href="#definir-el-alcance-y-la-estrategia-de-pruebas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En esta tarea se especifican y justifican de los niveles de pruebas a realizar, así como el marco general de planificación de cada nivel de prueba, según el siguiente esquema:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Definición de los perfiles implicados en los distintos niveles de prueba.</li>
+<li>Planificación temporal.</li>
+<li>Criterios de verificación y aceptación de cada nivel de prueba.</li>
+<li>Definición, generación y mantenimiento de verificaciones y casos de prueba.</li>
+<li>Análisis y evaluación de los resultados de cada nivel de prueba.</li>
+<li>Productos a entregar como resultado de la ejecución de las pruebas.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="registro-de-pruebas">
+<h2>Registro de pruebas<a class="headerlink" href="#registro-de-pruebas" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="descripcion">
+<h3>Descripción<a class="headerlink" href="#descripcion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El registro de pruebas es un mecanismo empleado para tener un control detallado sobre las pruebas realizadas en el sistema almacenando datos importantes para: resolución de problemas, análisis de los procedimientos de desarrollo y mejoramiento de la calidad del software a nivel general. Es necesario evaluar el proyecto a medida que se va construyendo, por lo tanto se hace necesario llevar a cabo, en paralelo al proceso de desarrollo, un proceso de evaluación o comprobación de los distintos productos o modelos que se van generando.</p>
+</div>
+<div class="section" id="entradas-del-registro">
+<h3>Entradas del registro<a class="headerlink" href="#entradas-del-registro" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>Ejecuciones</strong>: Se identificarán las ejecuciones realizadas sobre el sistema. Se deberá indicar el número de ejecución de la prueba, la fecha de la ejecución de la misma y algún identificador que identifique unívocamente la prueba.</p>
+<p><strong>Resultados del procedimiento</strong>: Al final de cada prueba se indicarán los resultados obtenidos, destacando número de pruebas pasadas con éxito, número de pruebas con resultados fallidos y número de pruebas totales. A modo de complemento, debería adjuntarse, si es necesario, un listado con las pruebas ejecutadas seguido de su resultado.
+Por ejemplo:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Alta cliente Ok</li>
+<li>Alta Servicio Fail</li>
+</ul>
+</div></blockquote>
+<p><strong>Información sobre el ambiente de prueba</strong>: Se detallará el ambiente utilizado para realizar las pruebas. Se describirá el entorno general de pruebas y en concreto las posibles configuraciones de hardware a utilizar en las pruebas, así como las necesidades software y/o combinaciones de ambos.</p>
+<p><strong>Eventos anómalos</strong>
+Se adjuntará además lo producido por lo detallado en la siguiente sección.</p>
+</div>
+</div>
+<div class="section" id="informe-de-pruebas-incidencias">
+<h2>Informe de pruebas: Incidencias<a class="headerlink" href="#informe-de-pruebas-incidencias" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Todas las pruebas realizadas debieran tener una referencia al identificador de un caso de prueba, de modo tal, que sea posible establecer una relación entre ambos y además,  favorece a la trazabilidad del requerimiento ya que el propio caso de prueba tendrá un claro punto de orígen/creación, con lo cual será posible saber en todo momento el estado en el que se encuentra una prueba y/o un caso de prueba.</p>
+</div>
+<div class="section" id="herramientas">
+<h2>Herramientas<a class="headerlink" href="#herramientas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Las herramientas que se sugieren para la realización del proceso de prueba son:</p>
+<ul class="simple">
+<li>PyUnit</li>
+<li>Splinter</li>
+<li>Unittest.mock</li>
+<li>Doctest</li>
+<li>Selenium</li>
+</ul>
+<p>Breve descripción de las herramientas:</p>
+<p><em>PyUnit</em></p>
+<p>Este marco de pruebas unitarias, apodado “PyUnit” por convención, es una versión en Python de JUnit.JUnit fue escrito por Kent Bleck y Erich Gamma, y es a su vez, una versión Java del marco de pruebas de Smalltalk de Kent. Cada uno es el el framework de pruebas estándar de facto para su respectivo lenguaje y por lo tanto ambos son una base para un marco Python eficaz y elegante.</p>
+<p><em>Splinter</em></p>
+<p>Splinter, es una herramienta open source para hacer testing de aplicaciones web usando Python. Este framework te permite automatizar acciones del navegador, como visitar páginas web e interactuar con sus elementos. Dado que Splinter nos permite automatizar acciones en el navegador, puede emplearse para realizar pruebas en aplicaciones escritas no solo en Python. Splinter no está integrado a ningún framework de pruebas de aceptación pero posee una capa de abstracción para escribir su propia implementación.</p>
+<p><em>Unittest.mock</em></p>
+<p>Unittest.mock es una biblioteca para realizar pruebas en Python. Esta le permite reemplazar partes de su sistema bajo prueba con objetos simulados y hacer afirmaciones sobre la forma en que se han utilizado. Después de realizar una acción, puede hacer afirmaciones sobre los que utilizaron métodos/atributos y argumentos con los que se les llama. Mock es muy fácil de usar y está diseñado para su uso con unittest. Mock se basa en el patrón “acción -&gt; afirmación” en vez de “record -&gt; replay” utilizado por muchos mocking frameworks.</p>
+<p><em>Doctest</em></p>
+<p>Python tiene un soporte considerable para pruebas, con los módulos doctest y unittest para pruebas de unidad y el módulo de pruebas para pruebas de regresión.
+Cuando creamos un módulo, estos están diseñados para ser importados y los objetos ser proveídos. Cuando el módulo es importado las pruebas de unidad simplemente son ignorados; pero cuando el módulo está siendo ejecutado las pruebas de unidad son ejecutados. Estas acciones son llevadas a cabo gracias al módulo doctest.
+El módulo doctest nos permite realizar pruebas unidad de la manera más simple y fácil como sea posible.
+Para realizar las pruebas todo lo que necesitamos es adicionar ejemplos a nuestro docstring, escribiendo lo mismo que en el intérprete de Python y el resultado que quisiéramos obtener de retorno.
+El docstring contiene una pequeña descripción de lo que se intenta probar, seguido del código que hubiéramos tipeado para realizar la prueba en el intérprete de Python.
+El módulo doctest usa esta sintaxis ya que nos es más familiar.</p>
+<p><em>Selenium</em></p>
+<p>Selenium es un conjunto de utilidades que facilita la labor de obtener juegos de pruebas para aplicaciones web. Para ello nos permite grabar, editar y depurar casos de prueba, que podrán ser ejecutados de forma automática e iterativa posteriormente.
+Además de ser una herramienta para registrar acciones, permite editarlas manualmente o crearlas desde cero. Las acciones se basan en el uso de diferentes API’s en diferentes lenguajes (PHP, Ruby, JAVA, Javascript, etc). Entre su principales características podemos nombrar:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Facilidad de registro y ejecución de los test.</li>
+<li>Referencia a objetos DOM en base al ID, nombre o a través de XPath.</li>
+<li>Auto-completado para todos los comandos.</li>
+<li>Las acciones pueden ser ejecutadas paso a paso.</li>
+<li>Herramientas de depuración y puntos de ruptura (breakpoints).</li>
+<li>Los test pueden ser almacenados en diferentes formatos.</li>
+</ul>
+</div></blockquote>
+<p>El potencial de esta herramienta puede ser utilizado para la grabación de las pruebas funcionales durante la Generación de pruebas de regresión. Con este servicio se consigue obtener una batería de pruebas automatizadas que podrán ser utilizadas cuando sea necesario repetir las pruebas.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Plan de Aseguramiento de la Calidad de Software</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisiones.html">Historia de revisiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requerimientos.html">Ingeniería de Requerimientos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requerimientos no funcionales.html">Requerimientos no funcionales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diseno.html">Proceso de Diseño</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codificacion.html">Codificación y Producción de Contenido</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pruebas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion">Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alcazce">Alcazce</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#objetivo">Objetivo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#plan-de-prueba">Plan de prueba</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tipos-de-prueba">Tipos de prueba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#criterios-de-aceptacion">Criterios de aceptación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#equipo-de-pruebas">Equipo de Pruebas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#suspension-y-reanudacion">Suspensión y reanudación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#entregables-de-prueba">Entregables de prueba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#necesidades-ambientales">Necesidades ambientales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aspectos-de-ejecucion-de-las-pruebas">Aspectos de ejecución de las pruebas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#definicion-del-entorno-de-pruebas">Definición del Entorno de Pruebas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#definir-el-alcance-y-la-estrategia-de-pruebas">Definir el Alcance y la Estrategia de Pruebas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#registro-de-pruebas">Registro de pruebas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#descripcion">Descripción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#entradas-del-registro">Entradas del registro</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#informe-de-pruebas-incidencias">Informe de pruebas: Incidencias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#herramientas">Herramientas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuracion.html">Gestión de la Configuración</a></li>
+<li class="toctree-l1"><a class="reference internal" href="riesgos.html">Gestión de riesgos</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="codificacion.html" title="capítulo anterior">Codificación y Producción de Contenido</a></li>
+      <li>Next: <a href="configuracion.html" title="próximo capítulo">Gestión de la Configuración</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ingeniería de Software 3t.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/pruebas.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

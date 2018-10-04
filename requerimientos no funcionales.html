@@ -1,0 +1,177 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Requerimientos no funcionales &#8212; documentación de Plan de Aseguramiento de la Calidad de Software - 1.1</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Proceso de Diseño" href="diseno.html" />
+    <link rel="prev" title="Ingeniería de Requerimientos" href="requerimientos.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="requerimientos-no-funcionales">
+<span id="id1"></span><h1>Requerimientos no funcionales<a class="headerlink" href="#requerimientos-no-funcionales" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta sección es una guía para la correcta gestión de los requerimientos no funcionales.</p>
+</div>
+<div class="section" id="alcance">
+<h2>Alcance<a class="headerlink" href="#alcance" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los requerimientos no funcionales  se refieren a todos los requerimientos que no describen información a guardar, ni funciones a realizar, sino características de funcionamiento.</p>
+</div>
+<div class="section" id="id2">
+<h2>Requerimientos No Funcionales<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los requerimientos no funcionales describen lo bien que un sistema realiza su función, a diferencia de los requerimientos funcionales que son aquellos que describen el funcionamiento de dicho sistema.</p>
+</div>
+<div class="section" id="generalidades">
+<h2>Generalidades<a class="headerlink" href="#generalidades" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Debe pensarse en estos requerimientos como aquellas características que hacen al producto atractivo, usable, rápido y confiable.
+Se conocen como un conjunto de características de calidad, que es necesario tener en cuenta al diseñar e implementar el Software.
+No son parte de la razón fundamental del producto pero si son necesarios para hacer funcionar el producto de la manera deseada.
+No modifican la funcionalidad del producto y si añaden funcionalidad al producto.</p>
+</div>
+<div class="section" id="categorias">
+<h2>Categorías<a class="headerlink" href="#categorias" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Existen diferentes categorías en los requerimientos no funcionales, a saber:</p>
+<ul class="simple">
+<li>Requerimientos de Apariencia.</li>
+<li>De Usabilidad.</li>
+<li>De Rendimiento.</li>
+<li>De Mantenibilidad y Portabilidad.</li>
+<li>De Seguridad.</li>
+<li>Legales.</li>
+</ul>
+<p>Además existen otros menos usados pero igual de importantes:</p>
+<ul class="simple">
+<li>De Interfaz.</li>
+<li>De Desempeño.</li>
+<li>Operacionales y Económicos.</li>
+<li>Funcionalidad.</li>
+<li>Eficiencia y Simplicidad.</li>
+</ul>
+<p>A continuación se describen las principales características no funcionales que debe contener un sistema.</p>
+<p><strong>Interfaces de Usuario</strong>: Los formularios y demás herramientas de apoyo deben ser intuitivos al usuario, debe existir la posibilidad de solicitar ayuda, su despliegue frente al usuario debe ser rápido, en el caso que sea una aplicación web debe permitir su navegación a través de los navegadores más comunes como Mozilla Firefox, Google Chrome e Internet Explorer y en las diferentes plataformas (Windows, Mac, Linux), deber ser autoajustable a cualquier tamaño y resolución de pantalla del usuario, debe utilizar imágenes optimizadas y componentes de diseño que permitan mostrar la información de manera dinámica, ágil y estética.</p>
+<p>Se debe considerar el diseño de interfaces para dispositivos móviles (celulares, tablets, etc.).</p>
+<p><strong>Requerimientos de desempeño</strong>: Los tiempos de respuesta relacionados con formularios de manejo de información, adición, modificación, eliminación, consulta de registros, autenticación y emisión de avisos y confirmaciones por parte del usuario, en forma general, no deben ser superiores a 2.5 segundos, los informes y consultas que presenten una complejidad mediana no deben exceder el tiempo de 4 segundos.</p>
+<p><strong>Integridad</strong>: El modelo de seguridad debe estar presente en cada una de las capas del sistema, garantizando el acceso autorizado a la información. No deben existir “puertas traseras” que permitan el manejo de información fuera del flujo lógico del sistema. Se requiere la encriptación de los principales datos almacenados en la base de datos. De igual forma se debe proveer un mecanismo de aseguramiento de integridad de toda la información registrada en la base de datos. Esta integridad, debe ser estructural y referencial.</p>
+<p><strong>Control de Acceso Externo</strong>: Se debe considerar que parte de la infraestructura presenta un esquema basado en redes seguras en donde se dispone de Firewalls mediante los cuales el manejo de puertos y protocolos son administrados desde este punto, y no desde los sistemas de información.</p>
+<p>Se debe considerar aspectos de seguridad relacionados a su utilización a través de redes públicas, garantizando la confidencialidad e integridad de la información y acceso a ella.</p>
+<p><strong>Auditoría</strong>: Se debe implementar el registro de acciones realizadas por los usuarios a las principales transacciones (usuario, fecha, hora) y registros del sistema en lo relacionado con la creación, modificación y eliminación.</p>
+<p><strong>Flexibilidad</strong>: La configuración de los parámetros de instalación no debe requerir modificaciones al código fuente de la instalación.</p>
+<p>Debe ser totalmente independiente de la topología de red utilizada, es decir, el sistema debe poder funcionar en múltiples esquemas de comunicación, tanto para equipos conectados remotamente, como para equipos conectados por una red LAN, WAN o Internet y todas las combinaciones anteriormente descritas.</p>
+<p><strong>Disponibilidad</strong>: El sistema no debe presentar ningún punto de fallo, es decir, debe estar provisto de mecanismos o componentes que aseguren la continuidad del servicio.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Plan de Aseguramiento de la Calidad de Software</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisiones.html">Historia de revisiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requerimientos.html">Ingeniería de Requerimientos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Requerimientos no funcionales</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion">Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alcance">Alcance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Requerimientos No Funcionales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generalidades">Generalidades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#categorias">Categorías</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="diseno.html">Proceso de Diseño</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codificacion.html">Codificación y Producción de Contenido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pruebas.html">Pruebas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuracion.html">Gestión de la Configuración</a></li>
+<li class="toctree-l1"><a class="reference internal" href="riesgos.html">Gestión de riesgos</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="requerimientos.html" title="capítulo anterior">Ingeniería de Requerimientos</a></li>
+      <li>Next: <a href="diseno.html" title="próximo capítulo">Proceso de Diseño</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ingeniería de Software 3t.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/requerimientos no funcionales.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

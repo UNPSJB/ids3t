@@ -1,0 +1,537 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gestión de la Configuración &#8212; documentación de Plan de Aseguramiento de la Calidad de Software - 1.1</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Gestión de riesgos" href="riesgos.html" />
+    <link rel="prev" title="Pruebas" href="pruebas.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="gestion-de-la-configuracion">
+<span id="configuracion"></span><h1>Gestión de la Configuración<a class="headerlink" href="#gestion-de-la-configuracion" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta sección es una guía para la correcta gestión de la configuración del proceso de desarrollo. Incluye los lineamientos necesarios para el manejo de versiones de los diferentes componentes, el manejo de las diferentes ramas y responsabilidades y actividades de los distintos actores.</p>
+</div>
+<div class="section" id="alcance">
+<h2>Alcance<a class="headerlink" href="#alcance" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El plan de la Gestión de la Configuración</p>
+<p>El plan de configuración está basado en algunos supuestos que se detallarán:</p>
+<ul class="simple">
+<li>Tener control sobre cada una de las iteraciones y fases, de los productos generados  en estas y de los cambios surgidos, evaluados y aprobados.</li>
+<li>Se deben incluir en control de configuración la mayor cantidad de productos posibles, tomando en cuenta siempre las restricciones dadas por la duración del  proyecto y por la capacidad organizativa del equipo.</li>
+<li>Si es necesario, se realizarán las modificaciones que el cliente ha pedido y se  actuará con las estrategias pertinentes.</li>
+<li>La elección de los elementos de configuración se realizará en base a los entregables, siendo esta responsabilidad del Responsable de SCM, apoyado por los integrantes de cada disciplina.</li>
+<li>Al concluir cada una de las iteraciones, se llevará a cabo una prueba de verificación  de la funcionalidad.</li>
+</ul>
+</div>
+<div class="section" id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los objetivos de la Gestión de la Configuración son:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Determinar cuál es la versión actual de cada uno de los componentes.</li>
+<li>Determinar el proceso cambios.</li>
+<li>Determinar la política de releases.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="roles-y-responsabilidades">
+<h2>Roles y Responsabilidades<a class="headerlink" href="#roles-y-responsabilidades" title="Enlazar permanentemente con este título">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Roles</th>
+<th class="head">Responsabilidades</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Gestor de configuración</td>
+<td><ul class="first last simple">
+<li>Gestionar la planificación, identificación, control, seguimiento y auditoría de todos los elementos de configuración en la base de datos de configuración.</li>
+<li>Desarrollar el plan de gestión de configuración.</li>
+<li>Promover el uso efectivo de la base de datos de configuración dentro de la organización.</li>
+<li>Monitorear y reportar los cambios no autorizados sobre los elementos de configuración.</li>
+<li>Asegurar la consistencia e integridad de los datos de la base de datos de configuración a través de la ejecución de procedimientos de verificación y auditoría.</li>
+<li>Liderar las actividades de evaluación del proceso: revisar tipos de elementos de configuración, relaciones, atributos y valores asociados, estructura de la base de datos, derechos de acceso.</li>
+<li>Aprobar cambios estructurales en la base de datos de configuración.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Coordinador de configuración</td>
+<td><ul class="first last simple">
+<li>Asegurar que todos los elementos de configuración están registrados de forma adecuada en la base de datos de configuración.</li>
+<li>Asegurar la consistencia e integridad de los datos de la base de datos de configuración y la estructura del sistema a través de la ejecución de procedimientos de verificación y auditoría.</li>
+<li>Reportar cualquier discrepancia o no conformidad en los elementos de configuración al gestor de configuración.</li>
+<li>Participar en la mejora continua del proceso de gestión de configuración.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Responsable de elementos
+de configuración</td>
+<td><ul class="first last simple">
+<li>Asegurar que los elementos de configuración de los que es responsable están registrados en la base de datos de configuración con el estado y datos de configuración apropiados.</li>
+<li>Verificar que los cambios sobre los elementos de configuración siguen el proceso de cambios definido.</li>
+<li>Asegurar la idoneidad e integridad de los elementos de configuración de los que es responsable.</li>
+<li>Trabajar conjuntamente con el gestor de configuración para identificar las causas de cualquier discrepancia identificada en las auditorías e implementar las acciones correctivas.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Gestor de cambio</td>
+<td><ul class="first last simple">
+<li>Evaluar el impacto y riesgo de los cambios.</li>
+<li>Asegurar que los responsables de los elementos de configuración actualizan los históricos de estos elementos con los cambios implementados.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="actividades-de-gestion-de-configuracion">
+<h2>Actividades de Gestión de Configuración<a class="headerlink" href="#actividades-de-gestion-de-configuracion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En la siguiente tabla, se recogen de forma resumida las actividades que conforman el proceso de gestión de configuración.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="15%" />
+<col width="35%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Actividad</th>
+<th class="head">Rol Responsable</th>
+<th class="head">Descripción</th>
+<th class="head">Entradas</th>
+<th class="head">Salidas</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Gestión del proceso de gestión de configuración.</td>
+<td>Gestor de configuración.</td>
+<td>Documentar el plan de gestión de configuración.</td>
+<td>Necesidades del proyecto. Plan de proyecto.</td>
+<td>Plan de gestión de configuración aprobado.</td>
+</tr>
+<tr class="row-odd"><td>Identificación de elementos de configuración.</td>
+<td>Gestor de configuración.</td>
+<td>Identificar elementos de configuración. Crear estructura del directorio de gestión de configuración.</td>
+<td>Productos del proyecto.</td>
+<td>Elementos de configuración identificados.
+Línea base. Estructura del directorio de
+gestión de configuración.</td>
+</tr>
+<tr class="row-even"><td>Mantenimiento y control de la gestión de configuración.</td>
+<td>Responsable del elemento de configuración.</td>
+<td>Control de cambios sobre elementos de configuración y líneas base. Obtener aprobación de solicitudes
+de cambio sobre productos de trabajo de línea base.</td>
+<td>Peticiones de cambio.</td>
+<td>Registro de solicitud de cambio. Solicitud
+de cambio aprobada. Línea base.</td>
+</tr>
+<tr class="row-odd"><td>Informe de estado de la configuración.</td>
+<td>Gestor de configuración.</td>
+<td>Mantener actualizado y publicar el estado de los elementos de configuración.</td>
+<td>Elementos de configuración.</td>
+<td>Informe de estado de elementos de
+configuración.</td>
+</tr>
+<tr class="row-even"><td>Verificación y auditoría.</td>
+<td>Gestor de configuración.</td>
+<td>Realizar auditorías de la gestión de configuración.</td>
+<td>Registros de la gestión de configuración.
+Línea base. Registros de cambios.</td>
+<td>Informe de auditoría de gestión de
+configuración.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="identificacion-de-elementos-de-configuracion">
+<h2>Identificación de Elementos de Configuración<a class="headerlink" href="#identificacion-de-elementos-de-configuracion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La actividad de identificación de la configuración identifica los elementos que van a ser controlados, establece esquemas para la identificación de los elementos y sus versiones, y establece las herramientas y técnicas a usar para adquirir y gestionar los elementos controlados. Estas actividades proporcionan la base para otras actividades de gestión de configuración.
+Las principales tareas a llevar a cabo dentro de esta actividad son:</p>
+<ul>
+<li><p class="first">Identificar los productos que se van a mantener bajo gestión de configuración para el proyecto.</p>
+</li>
+<li><p class="first">Asignar identificadores únicos para cada elemento de configuración y propiedades como autor, tipo de documento o fichero, persona responsable de ese elemento de configuración, etc.</p>
+</li>
+<li><p class="first">Definir estructura de almacenamiento.</p>
+</li>
+<li><p class="first">Definir un nivel de control de acceso de los miembros del equipo sobre la infraestructura de almacenamiento.</p>
+</li>
+<li><p class="first">Seleccionar herramientas específicas para la gestión de configuración.</p>
+</li>
+<li><p class="first">Especificar cuándo se va a incluir cada elemento bajo gestión de configuración (en qué momento del ciclo de vida).</p>
+</li>
+<li><p class="first">Obtener la autorización para incluir los documentos bajo gestión de configuración (línea base).</p>
+</li>
+<li><p class="first">Aplicar los procedimientos definidos para incluir los productos bajo gestión de configuración.</p>
+</li>
+<li><p class="first">Documentar los elementos que se han incluido bajo gestión de configuración.</p>
+</li>
+<li><p class="first">Desarrollar procedimientos para solicitar e implantar los cambios donde se especifique:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Quién solicita los cambios</li>
+<li>Cómo se notifican los cambios</li>
+<li>Cómo se evalúa el impacto</li>
+<li>Quién evalúa el impacto</li>
+<li>Quién acepta o rechaza el cambio</li>
+<li>Quién modifica los distintos productos (responsable de cada producto)</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>A la hora de seleccionar los elementos que estarán bajo gestión de configuración, se pueden tener en cuenta criterios como los siguientes:</p>
+<ul class="simple">
+<li>Productos de trabajo que vayan a ser utilizados por dos o más grupos.</li>
+<li>Productos de trabajo que puedan cambiar con el tiempo debido a cambios en requisitos o errores.</li>
+<li>Productos que dependan de otros en el sentido de que un cambio en uno de ellos implique un cambio en los otros.</li>
+<li>Productos de trabajo que sean críticos para el proyecto.</li>
+</ul>
+<p>Dependiendo de la naturaleza del proyecto los elementos de configuración pueden variar de un proyecto a otro.
+Elementos de configuración:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Planes</dt>
+<dd><ul class="first last simple">
+<li>Plan de proyecto</li>
+<li>Plan de calidad</li>
+<li>Plan de gestión de configuración</li>
+<li>Plan de gestión de riesgos</li>
+<li>…</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Registros del proyecto</p>
+</li>
+<li><p class="first">Material de apoyo al cliente</p>
+</li>
+<li><p class="first">Especificación de requisitos</p>
+<blockquote>
+<div><ul class="simple">
+<li>Requisitos de negocio</li>
+<li>Requisitos de usuario</li>
+<li>Requisitos de sistema</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Matriz de trazabilidad de requisitos</p>
+</li>
+<li><p class="first">Documentos de diseño</p>
+</li>
+<li><p class="first">Resultados de la resolución y análisis de decisión</p>
+</li>
+<li><p class="first">Código fuente</p>
+</li>
+<li><p class="first">Plan de integración de software</p>
+</li>
+<li><p class="first">Informes resultantes de las revisiones realizadas en los puntos de comprobación o al final de las fases</p>
+</li>
+<li><p class="first">Plan de pruebas o unitarias o de integración o de sistemas o de aceptación de usuario o de regresión</p>
+</li>
+<li><p class="first">Datos de pruebas y casos de pruebas</p>
+</li>
+<li><p class="first">Plan de instalación/mantenimiento</p>
+</li>
+<li><p class="first">Documentos de manual de usuario</p>
+</li>
+<li><p class="first">Plan de entrega de servicios</p>
+</li>
+<li><p class="first">Informes de investigación</p>
+</li>
+<li><p class="first">Informes de estimación</p>
+</li>
+<li><p class="first">Informes de cierre del proyecto</p>
+</li>
+<li><p class="first">Prototipos</p>
+</li>
+<li><p class="first">Informes de métricas</p>
+</li>
+<li><p class="first">Todos los entregables enviados al cliente.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="mantenimiento-y-control-de-la-gestion-de-la-configuracion">
+<h2>Mantenimiento y control de la gestión de la configuración<a class="headerlink" href="#mantenimiento-y-control-de-la-gestion-de-la-configuracion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Cuando se solicita un cambio que afecta a algún producto bajo gestión de configuración (línea base), entrará en funcionamiento el proceso de control de cambios. En este proceso, que se explicará a continuación, se deben identificar y valorar los cambios y, si son admitidos, modificar los productos afectados, siguiendo el procedimiento establecido. Estos cambios realizados deben comunicarse a todas las personas que resulten afectadas por los mismos.</p>
+</div>
+<div class="section" id="proceso-de-control-de-cambios">
+<h2>Proceso de control de cambios<a class="headerlink" href="#proceso-de-control-de-cambios" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Como primer paso para gestionar los cambios sobre los elementos controlados es determinar los cambios que se van a realizar. El proceso de petición de cambios proporciona procedimientos formales para enviar y registrar peticiones de cambio, evaluar el coste e impacto potencial del cambio propuesto, y aceptar, modificar, o rechazar el cambio propuesto.</p>
+<p>Los cambios solicitados o los errores detectados deberán ser identificados a través de los canales preestablecidos (personas, herramientas, etc.). Una vez recibidos serán documentados para su posterior estudio.</p>
+<p>Las peticiones de cambio sobre elementos de configuración pueden iniciarse por cualquiera y en cualquier punto del proceso de desarrollo y pueden incluir una sugerencia de solución y prioridad de la petición. Un posible origen de las peticiones de cambio es el inicio de una acción correctiva en respuesta a informes de problemas. El tipo de cambio (p.ej.: defecto o mejora) se debe registrar en la petición de cambio (SCR) para así poder recoger métricas sobre los cambios por tipo de cambio.</p>
+<p>Una vez recibida una SCR, se realizará una evaluación técnica o análisis de impacto para determinar el alcance de las modificaciones que serían necesarias realizar una vez se acepte la petición. En este punto es importante un buen entendimiento de las relaciones entre los elementos de software. Según la línea base afectada, los elementos de configuración implicados, y la naturaleza del cambio, la persona responsable deberá evaluar los aspectos técnicos y de gestión de la petición de cambio, y a continuación aceptar, modificar, rechazar o aplazar el cambio propuesto. En cualquier caso, la decisión tomada deberá quedar documentada de alguna forma.</p>
+<p>Las SCR aprobadas se implementarán utilizando los procedimientos de software definidos de acuerdo a los requisitos de tiempo que apliquen. Será necesario proporcionar una forma de realizar un seguimiento de qué SCR se incorporan, en qué versiones de software y líneas bases concretas. Como parte del cierre del proceso de cambios, los cambios realizados deben pasar por auditorías de configuración y verificación de la calidad del software. Esto incluye asegurar que sólo se han realizado los cambios aprobados.</p>
+<p>La implementación del cambio será soportada por una herramienta que permita gestión de versiones y un repositorio de código.</p>
+<p>Tras realizar el cambio se comunicará, si así está establecido, a todos aquellos que estén afectados por dicho cambio. De esta forma, se preservar la integridad de los productos haciendo que todo el mundo trabaje con las versiones correctas.</p>
+<p>En el siguiente gráfico ilustra este proceso de control de cambios:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/controldecambios.png"><img alt="_images/controldecambios.png" src="_images/controldecambios.png" style="width: 672.8000000000001px; height: 441.6px;" /></a>
+</div>
+<p>La autoridad para aceptar o rechazar los cambios propuestos reside en una entidad conocida como comité de control de configuración (CCB). Puede haber múltiples niveles de autorización de cambios dependiendo de varios criterios como la criticidad de los elementos implicados, la naturaleza del cambio (p.ej.: impacta en presupuesto o calendario), o el momento actual en el ciclo de vida. Las actividades del CCB están sujetas a revisión y auditoría de calidad de software.</p>
+</div>
+<div class="section" id="recuperacion-de-los-elementos-de-configuracion">
+<h2>Recuperación de los elementos de configuración<a class="headerlink" href="#recuperacion-de-los-elementos-de-configuracion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En lo referido a la recuperación de los elementos de la configuración es preciso la definición de un repositorio general del proyecto que posea interfaz vía línea de comandos y/o gráfica y que en lo posible, también posea una interfaz web que facilite su uso. Además, la herramienta de repositorio deberá contar con una política de branching que no resulte dificultosa para el equipo.</p>
+<p>La estructura del desarrollo se conformará por dos ramas principales:</p>
+<blockquote>
+<div><ul class="simple">
+<li>master: esta      rama contendrá todas las versiones estables del producto, con lo        cual cualquier commit que se realice sobre ella, implica que el producto está listo para ser usado por los usuarios. Este paso  implica que el producto haya pasado la correspondiente batería de pruebas y que esté debidamente documentado.</li>
+<li>develop: en esta rama se aloja el código que conformará la siguiente la versión. Sobre esta rama se trabajará con versiones inestables, que buscan agregar los cambios necesarios para cumplir con los requerimientos.</li>
+</ul>
+</div></blockquote>
+<p>Además de estas dos ramas principales se sugiere el uso de ramas de soporte. Dichas ramas son:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Feature: Nuevas características del producto.</li>
+<li>Release: Últimos cambios antes de pasar a producción.</li>
+<li>Hotfix:   Cambios en “caliente”, corrección de bugs       reportados mediante el uso de tickets en versiones del servicio que se encuentran en la rama master.</li>
+<li>Cleanup y Optimization: con estas ramas se busca fomentar las prácticas de limpieza y optimización de todos los productos.</li>
+</ul>
+</div></blockquote>
+<p>Todas las ramas estarán sujetas a un esquema de nombrado, que permitan identificar cual ha sido la historia de la misma y cuál ha sido el motivo que ha dado origen a la rama. Se sugiere que las ramas adopten la siguiente forma: nombrerama/descripcion, en donde el nombrerama identifica alguna de las ramas antes presentadas y descripción es un texto breve que identifica al requerimiento.</p>
+<p>Para las distintas ramas de soporte se definen un conjunto de reglas para su correcta utilización:</p>
+<p><em>Feature</em></p>
+<p>Se utilizan para desarrollar las nuevas características del servicio que, una vez terminadas, se incorporan a la rama develop.
+Se dispara la creación de estas ramas a partir de nuevas funcionalidades que se espera del producto.
+La utilización básica de estas ramas es la siguiente:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Se originan a partir de la rama develop, dado que se emplea el código que actualmente se está empleando.</li>
+<li>Se incorporan siempre a la rama develop. Una vez hecho esto, se deberán eliminar las ramas ya no trabajaran sobre esa feature. De esta forma se busca un esquema de trabajo limpio en donde no se tenga constantemente múltiples ramas, sino que existan las ramas master y develop, y que el resto sean temporales.</li>
+<li>El nombrado de esta rama puede ser cualquiera, pero no debe entrar en conflicto con el nombre de master, develop, relese o hotfix.</li>
+</ul>
+</div></blockquote>
+<p><em>Release</em></p>
+<p>Estas ramas se utilizan para preparar el siguiente código en producción. Estas ramas son las que se vuelcan en los servidores de pre-producción para hacer el testing final: corrección de bugs, corrección de documentación, mejora de las GUI, etc. Se hace la puesta a punto final de la aplicación antes de liberar la versión definitiva, que irá a parar a la rama master y a la rama develop.
+La utilización básica de esta rama es:</p>
+<blockquote>
+<div><ul class="simple">
+<li>El nombrado de la rama deberá corresponder con un tag que se ajuste al esquema de identificación de versiones definido por el equipo.</li>
+<li>Se originan a partir de la rama develop.</li>
+<li>Se incorporan a master y develop. La rama dejará de existir una vez que se efectúe el merge sobre dichas ramas, con lo cual las versiones estables quedarán sobre la rama master y el trabajo en curso sobre la rama develop. En caso de existir bugs de último momento, se creará la rama de tipo Hotfix.</li>
+</ul>
+</div></blockquote>
+<p><em>Hotfix</em></p>
+<p>Estas ramas ayudan a hacer las modificaciones de forma más eficiente y a corregir el problema con el mínimo impacto sobre el resto del trabajo que se está haciendo. El uso de estas ramas permite:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Interrumpir el trabajo que se está haciendo en la rama develop para una versión nueva del servicio.</li>
+<li>Resolver el bug.</li>
+<li>Incorporar la      corrección del bug en la rama master para desplegarlo en producción lo más rápido posible. También permite identificar sobre la rama master que ha habido una corrección, modificando el número de patch en el identificador de la versión.</li>
+<li>Incorporar la     corrección del bug en la rama develop, si es necesario.</li>
+<li>Retomar el trabajo en la rama develop.</li>
+</ul>
+</div></blockquote>
+<p><em>Cleanup</em></p>
+<p>Estas ramas son empleadas para la limpieza de todo lo producido, es decir, tanto a nivel de código como a nivel de documentación. En lo que respecta a la documentación, permite acomodar formato de la misma eliminación de errores de redacción, etc. A nivel de código permite eliminar piezas de código que no se ajusten a los estándares recomendados, que no cumplan con los requerimientos, etc.</p>
+<p><em>Optimization</em></p>
+<p>Estas ramas son empleadas para la optimización tanto a nivel de documentación como de código. En el caso de la documentación implica la reelaboración de aquella documentación que no se corresponda con la realidad. En el caso del código, implica la optimización de rutina de código sin impactar sobre la funcionalidad de la misma.</p>
+</div>
+<div class="section" id="informe-del-estado-de-los-elementos-de-configuracion">
+<h2>Informe del estado de los elementos de configuración<a class="headerlink" href="#informe-del-estado-de-los-elementos-de-configuracion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El informe del estado de la configuración reporta la información necesaria para gestionar de forma efectiva la configuración de software. En esta actividad se deberá diseñar y operar un sistema para la captura y reporte de la información necesaria a medida que avanza el proceso de desarrollo.</p>
+<p>Como en cualquier sistema de información, la información sobre el estado de la configuración que se quiere gestionar debe ser identificada, recogida y mantenida. Son necesarias diversas métricas e información para dar soporte al proceso de gestión de configuración. El tipo de información disponible incluye la identificación de configuración aprobada así como el estado actual de la implementación de los cambios. Por ejemplo, información del tipo:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Un registro de documentación de configuración aprobada.</li>
+<li>La designación de un responsable de los elementos de configuración del proyecto.</li>
+<li>El estado de cambios propuestos y desviaciones de la configuración.</li>
+<li>La implementación del estado de los cambios aprobados.</li>
+<li>La configuración de todas las unidades de los elementos de configuración en el inventario.</li>
+<li>Resultados de las auditorías.</li>
+</ul>
+</div></blockquote>
+<p>Para llevar a cabo estas actividades de obtención de datos y generación de informes se hace necesario el soporte de una herramienta automatizada.</p>
+</div>
+<div class="section" id="verificacion-y-auditoria">
+<h2>Verificación y Auditoría<a class="headerlink" href="#verificacion-y-auditoria" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una auditoría de software es una actividad llevada a cabo para evaluar, de forma independiente y objetiva, la conformidad de los productos y procesos software con respecto a las regulaciones, estándares, guías, planes y procedimientos aplicables (IEEE1028-97).</p>
+<p>Las auditorías se llevarán a cabo de acuerdo a un proceso bien definido que detalla los roles y responsabilidades de los auditores. Cada auditoría debe ser cuidadosamente planificada, en función de la naturaleza del proyecto y de los requisitos. El uso de herramientas que ayuden en la planificación y realización de auditorías facilitan en gran medida el proceso.</p>
+<p>Estas auditorías incluirán:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Objetivo: el objetivo de todas la auditorías es verificar que en un momento dada, la línea base se compone de una colección consistente y bien definida de productos.</li>
+<li>Elementos de configuración bajo auditoría: se elegirán uno o más elementos de configuración de mayor prioridad en la línea base.</li>
+<li>Agenda de auditorías: antes de la liberación o actualización.</li>
+<li>Conducción: las auditorías serán dirigidas por el SCMR.</li>
+<li>Participantes: SCMR y los autores de los elementos de configuración a auditar.</li>
+<li>Documentos requeridos: documentos de SCR y reportes de estado de la configuración generados.</li>
+<li>Reportes de deficiencias y acciones correctivas: determinadas por los participantes.</li>
+<li>Criterio de aprobación: lo determina el SCMR.</li>
+</ul>
+</div></blockquote>
+<p>La actividad de auditoría de configuración de software determinará en qué medida un elemento de configuración satisface sus características funcionales y físicas requeridas. Se pueden realizar auditorías de este tipo en puntos clave del proceso de desarrollo. El resultado satisfactorio de una auditoría se puede utilizar como prerrequisito para establecer una línea base del producto.</p>
+<p>El objetivo de las auditorías de gestión de configuración es asegurarse de que:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Los elementos de configuración se encuentran en el directorio apropiado.</li>
+<li>El estado actual de los elementos de configuración es consistente.</li>
+<li>La información de línea base se mantiene de forma correcta.</li>
+<li>Se verifica la conformidad con estándares y procedimientos aplicables a la gestión de configuración, por ejemplo, comprobando si se usa la versión correcta del documento de diseño para realizar la codificación.</li>
+</ul>
+</div></blockquote>
+<p>Como resultado de la auditoría se deberá generar un informe donde se registren todas las no conformidades detectadas y así iniciar un plan de mejora para solucionarlas. Después de una auditoría de configuración exitosa se puede establecer una línea base del producto.</p>
+<p>La verificación no se realiza sobre los propios productos sino que consiste en comprobar que los productos que conforman una línea base están gestionados correctamente bajo el control de configuración, que todos los cambios realizados sobre estos productos han sido registrados y, por tanto, se puede establecer una trazabilidad entre cambios y productos afectados.</p>
+</div>
+<div class="section" id="gestion-de-la-liberacion-del-software">
+<h2>Gestión de la liberación del Software<a class="headerlink" href="#gestion-de-la-liberacion-del-software" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El término liberación se utiliza en este contexto para referirse a la distribución del elemento de configuración de software fuera de la actividad de desarrollo. Esto incluye tanto liberaciones internas como distribuciones al cliente.</p>
+<p>La gestión de la liberación del software implica la identificación, empaquetado y entrega de los elementos del producto, por ejemplo, programas ejecutables, documentación, notas de versión, y datos de configuración. Puesto que los cambios en el producto pueden producirse de forma continua, se deberá plantear cuándo lanzar una nueva versión. Esta decisión se tomará teniendo en cuenta la severidad de los problemas encontrados y la métrica de densidad de defectos registrada en la versión actual. En la tarea de empaquetado se deben identificar qué elementos del producto se van a entregar y las versiones correctas de esos elementos, según la aplicación deseada del producto. Las notas de versión describen las nuevas funcionalidades, problemas conocidos, y requisitos de la plataforma necesarios para la correcta operación del producto. El paquete que se va a liberar deberá contener también instrucciones para la instalación o actualización.</p>
+<div class="section" id="identificacion-de-versiones">
+<h3>Identificación de Versiones<a class="headerlink" href="#identificacion-de-versiones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El esquema sugerido para la identificación de las distintas versiones del producto, es un esquema numérico conformado de la siguiente manera:</p>
+<p>&lt;major_version&gt; . &lt;minor_version&gt; . &lt;patch_number&gt;</p>
+<blockquote>
+<div><ul class="simple">
+<li>Major Version: indica un cambio de funcionalidad sustancial a otras versiones del sistema</li>
+<li>Minor Version: indica que el sistema es funcionalmente idéntico, pero es distinto desde el punto de vista no-funcional a otras versiones</li>
+<li>Patch Version: indica el número de un parche aplicado al sistema, que significa la corrección de un defecto encontrado</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="herramientas">
+<h2>Herramientas<a class="headerlink" href="#herramientas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se recomienda la utilización de las siguientes herramientas para llevar a cabo el plan de gestión de configuración del software:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Git: Sistema de control de versiones.</li>
+<li>Github: Sistema web de control colaborativo de revisión y desarrollo de software utilizado para alojar proyectos que sean gestionados con Git.</li>
+<li>Gitflow: Conjunto de extensiones de git que facilitan la gestión de ramas y flujos de trabajo. Provee una serie de hooks que automatizan la gestión de ramas en un repositorio git, permitiendo así trabajar con la estructura de ramas descrita en el plan.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Plan de Aseguramiento de la Calidad de Software</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisiones.html">Historia de revisiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requerimientos.html">Ingeniería de Requerimientos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requerimientos no funcionales.html">Requerimientos no funcionales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diseno.html">Proceso de Diseño</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codificacion.html">Codificación y Producción de Contenido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pruebas.html">Pruebas</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gestión de la Configuración</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion">Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alcance">Alcance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#objetivos">Objetivos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#roles-y-responsabilidades">Roles y Responsabilidades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actividades-de-gestion-de-configuracion">Actividades de Gestión de Configuración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#identificacion-de-elementos-de-configuracion">Identificación de Elementos de Configuración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mantenimiento-y-control-de-la-gestion-de-la-configuracion">Mantenimiento y control de la gestión de la configuración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proceso-de-control-de-cambios">Proceso de control de cambios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recuperacion-de-los-elementos-de-configuracion">Recuperación de los elementos de configuración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#informe-del-estado-de-los-elementos-de-configuracion">Informe del estado de los elementos de configuración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verificacion-y-auditoria">Verificación y Auditoría</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gestion-de-la-liberacion-del-software">Gestión de la liberación del Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#identificacion-de-versiones">Identificación de Versiones</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#herramientas">Herramientas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="riesgos.html">Gestión de riesgos</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pruebas.html" title="capítulo anterior">Pruebas</a></li>
+      <li>Next: <a href="riesgos.html" title="próximo capítulo">Gestión de riesgos</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ingeniería de Software 3t.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/configuracion.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

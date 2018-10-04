@@ -1,0 +1,575 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gestión de riesgos &#8212; documentación de Plan de Aseguramiento de la Calidad de Software - 1.1</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="Gestión de la Configuración" href="configuracion.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="gestion-de-riesgos">
+<span id="riesgos"></span><h1>Gestión de riesgos<a class="headerlink" href="#gestion-de-riesgos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La gestión de riesgos permite definir en forma estructurada, operacional y organizacional, una serie de actividades para gestionar los riesgos de los proyectos a lo largo de todas las fases de su ciclo de vida de desarrollo de software.</p>
+</div>
+<div class="section" id="alcances">
+<h2>Alcances<a class="headerlink" href="#alcances" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li>Identificar, analizar y cuantificar posibles riesgos que puedan aparecer durante el desarrollo de un proyecto software.</li>
+<li>Desarrollar respuestas adecuadas para los posibles riesgos.</li>
+<li>Monitorizar el transcurso de un proyecto para evaluar el estado de los riesgos y actuar en consecuencia.</li>
+</ul>
+</div>
+<div class="section" id="objetivos">
+<h2>Objetivos<a class="headerlink" href="#objetivos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El propósito del plan es identificar los riesgos que se puedan presentar en el desarrollo del proyecto, analizarlos, calcular la exposición y en base a ello poder priorizarlos, para establecer estrategias de control y resolución, que permitan ejercer una correcta supervisión de los mismos.</p>
+<p>Es por esta razón que, para que el proyecto de desarrollo pueda llevarse a cabo dentro de los tiempos establecidos y los costos previstos, los riesgos deben ser identificados y controlados, es decir se debe realizar un adecuado “Análisis y Gestión de Riesgos”.</p>
+</div>
+<div class="section" id="roles-y-responsabilidades-dentro-de-la-gestion-de-riesgos">
+<h2>Roles y responsabilidades dentro de la gestión de riesgos<a class="headerlink" href="#roles-y-responsabilidades-dentro-de-la-gestion-de-riesgos" title="Enlazar permanentemente con este título">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Actividad</strong></th>
+<th class="head"><strong>Rol Responsable</strong></th>
+<th class="head"><strong>Descripción</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td rowspan="3">Desarrollo del plan de gestión de riesgos</td>
+<td>Jefe de proyecto</td>
+<td>Desarrolla y mantiene el plan de gestión de
+riesgos.</td>
+</tr>
+<tr class="row-odd"><td>Involucrado en el negocio</td>
+<td>Proporciona información acerca del nivel de
+riesgo que se considera aceptable.</td>
+</tr>
+<tr class="row-even"><td>Aceptador</td>
+<td>Proporciona entradas sobre los criterios de
+aceptación de los entregables que puedan
+influenciar sobre el riesgo del proyecto.</td>
+</tr>
+<tr class="row-odd"><td rowspan="4">Identificación de riesgos</td>
+<td>Jefe de proyecto</td>
+<td>Identifica los riesgos del proyecto.</td>
+</tr>
+<tr class="row-even"><td>Involucrado en el negocio</td>
+<td>Proporciona información de históricos que
+sirvan de ayuda para la identificación de
+los riesgos del proyecto.</td>
+</tr>
+<tr class="row-odd"><td>Expertos en la materia</td>
+<td>Proporciona información de históricos que
+sirvan de ayuda para la identificación de
+los riesgos del proyecto.</td>
+</tr>
+<tr class="row-even"><td>Equipo del proyecto</td>
+<td>Trabaja con el jefe del proyecto para
+identificar riesgos.</td>
+</tr>
+<tr class="row-odd"><td rowspan="3">Análisis de riesgos</td>
+<td>Jefe de proyecto</td>
+<td>Analiza los riesgos del proyecto.</td>
+</tr>
+<tr class="row-even"><td>Involucrado en el negocio</td>
+<td>Valida las suposiciones realizadas durante
+la planificación del proyecto y proporciona
+entradas sobre las probabilidades e impacto
+del riesgo.</td>
+</tr>
+<tr class="row-odd"><td>Expertos en la materia</td>
+<td>Valida las suposiciones realizadas durante
+la planificación del proyecto y proporciona
+entradas sobre las probabilidades e impacto
+del riesgo.</td>
+</tr>
+<tr class="row-even"><td rowspan="2">Planificación de respuesta de riesgos</td>
+<td>Jefe de proyecto</td>
+<td>Dirige el proceso de planificación de
+respuestas, identifica a los participantes
+y define los planes de respuesta de riesgos
+con la ayuda del equipo del proyecto.</td>
+</tr>
+<tr class="row-odd"><td>Involucrado en el negocio</td>
+<td>Participan en el desarrollo de los planes
+de respuesta de cada riesgo individual y
+asumen la responsabilidad de sus planes.</td>
+</tr>
+<tr class="row-even"><td rowspan="3">Control y monitorización de riesgos</td>
+<td>Jefe de proyecto</td>
+<td>Responsable final de la monitorización y
+control de riesgos. Es el responsable del
+mantenimiento del plan de riesgos.</td>
+</tr>
+<tr class="row-odd"><td>Involucrado en el negocio</td>
+<td>Identifican nuevos riesgos y riesgos que
+han cambiado; evalúan la efectividad de la
+gestión de riesgos, los planes de respuesta
+y cualquier acción de respuesta.</td>
+</tr>
+<tr class="row-even"><td>Responsable de un riesgo</td>
+<td>Responsable del plan de respuesta de un
+riesgo.</td>
+</tr>
+<tr class="row-odd"><td>Cierre de la gestión de riesgos</td>
+<td>Jefe de proyecto</td>
+<td>Registra las lecciones aprendidas durante
+la gestión de riesgos y proporciona los
+resultados durante el cierre del proyecto.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="12%" />
+<col width="18%" />
+<col width="7%" />
+<col width="16%" />
+<col width="14%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head">Jefe de proyecto</th>
+<th class="head">Involucrado en el negocio</th>
+<th class="head">Aceptador</th>
+<th class="head">Expertos en la materia</th>
+<th class="head">Equipo del proyecto</th>
+<th class="head">Responsable de un riesgo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Planificación
+gestión de riesgos</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Análisis
+de riesgos</td>
+<td>X</td>
+<td>X</td>
+<td>&#160;</td>
+<td>X</td>
+<td>X</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Planificación de
+respuesta de
+riesgos</td>
+<td>X</td>
+<td>X</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Control y
+monitorización de
+riesgos</td>
+<td>X</td>
+<td>X</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>X</td>
+</tr>
+<tr class="row-even"><td>Cierre de la
+gestión de riesgos</td>
+<td>C</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Nota: En algunos proyectos, el jefe o responsable del mismo puede delegar este proceso a otro miembro del equipo. Sin embargo toda la responsabilidad recae en el jefe de proyecto. Si un jefe de proyecto no ha sido identificado, el responsable oportuno se hará cargo de este proceso.</p>
+</div>
+<div class="section" id="actividades-de-la-gestion-de-riesgos">
+<h2>Actividades de la gestión de riesgos<a class="headerlink" href="#actividades-de-la-gestion-de-riesgos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La gestión de los riesgos del proyecto incluye los procesos relacionados con la planificación de la gestión de riesgos, la identificación y el análisis de riesgos, las respuestas a los riesgos, y el seguimiento y control de riesgos de un proyecto; la mayoría de estos procesos se actualizan durante el proyecto:</p>
+<ul class="simple">
+<li>Desarrollar un plan de gestión de riesgos</li>
+<li>Identificar riesgos</li>
+<li>Analizar riesgos</li>
+<li>Planificar la respuesta de riesgos</li>
+<li>Controlar y monitorear riesgos</li>
+<li>Cierre de la gestión de riesgos</li>
+</ul>
+<p>En el siguiente gráfico se puede observar cómo están relacionadas estas actividades:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/riesgoactividades.png"><img alt="_images/riesgoactividades.png" src="_images/riesgoactividades.png" style="width: 725.6px; height: 454.40000000000003px;" /></a>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="23%" />
+<col width="28%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Actividades</th>
+<th class="head">Descripción</th>
+<th class="head">Entradas</th>
+<th class="head">Salidas</th>
+<th class="head">Herramientas</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Desarrollar un plan de
+gestión de riesgos</td>
+<td>Se debe decidir cómo
+abordar y llevar a cabo
+las actividades de
+gestión de riesgos de un
+proyecto.
+Además se debe planificar
+y realizar una aproximación
+de las tareas relacionadas
+con la gestión de riesgos
+del proyecto y realizar
+revisiones sobre dichas
+actividades a lo largo del
+proyecto.</td>
+<td><ul class="first last simple">
+<li>Factores ambientales de la empresa.</li>
+<li>Activos de los procesos de la organización.</li>
+<li>Políticas y estándares de la organización.</li>
+<li>Enunciado del alcance del proyecto.</li>
+<li>Plan de gestión del proyecto.</li>
+<li>Estructura de tareas desglosada (WBS)</li>
+</ul>
+</td>
+<td>Plan de gestión de
+riesgos</td>
+<td>Reuniones y análisis de
+planificación</td>
+</tr>
+<tr class="row-odd"><td>Identificar Riesgos</td>
+<td>Se deberá determinar cuáles
+son los riesgos que podrían
+afectar a los proyectos
+y documentar sus
+características</td>
+<td><ul class="first last simple">
+<li>Categoría de riesgos</li>
+<li>Clasificación de fuentes de riesgos</li>
+<li>Factores ambientales de la empresa</li>
+<li>Activos de los procesos de la organización</li>
+<li>Enunciado del alcance del proyecto</li>
+<li>Plan de gestión de riesgos</li>
+<li>Plan de gestión de proyectos (WBS, recursos, requisitos, alcance, diseño,..)</li>
+<li>Información histórica: lecciones aprendidas</li>
+</ul>
+</td>
+<td><p class="first">Registro de riesgos</p>
+<ul class="last simple">
+<li>Riesgos identificados</li>
+<li>Disparadores</li>
+<li>Suposiciones</li>
+</ul>
+</td>
+<td><p class="first">Registro de riesgos</p>
+<ul class="last simple">
+<li>Artefactos para la
+identificación de riesgos
+(hoja de cálculo…)</li>
+<li>Revisiones de
+documentación</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Analizar Riesgos</td>
+<td>Se deberá evaluar los
+riesgos identificados en la
+fase anterior para
+determinar la probabilidad
+de que ocurran, el impacto
+del riesgo, el impacto
+acumulativo de múltiples
+riesgos y la prioridad
+de cada riesgo. El
+análisis de riesgo debería
+ser revisado a través del
+proyecto y ajustado
+en función de los cambios
+que se vayan produciendo
+sobre los riesgos del
+proyecto.</td>
+<td><ul class="first last simple">
+<li>Plan de gestión de riesgos</li>
+<li>Lista de riesgos identificados
+(registro de riesgos)</li>
+<li>Suposiciones</li>
+<li>Juicio de expertos</li>
+<li>Enunciado del alcance del proyecto</li>
+<li>Activos de los procesos de la organización</li>
+<li>Plan de gestión del proyecto</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Registro de riesgos
+actualizado</li>
+<li>Lista de riesgos
+priorizados por impacto
+y probabilidad</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Evaluación de
+probabilidad e impacto de
+los riesgos.</li>
+<li>Matriz de probabilidad
+e impacto.</li>
+<li>Evaluación de la
+calidad de los datos
+sobre riesgos.</li>
+<li>Categorización de
+riesgos.</li>
+<li>Evaluación de la
+urgencia de riesgos</li>
+<li>Técnicas de análisis
+cuantitativo de riesgos
+(y cualitativo)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Planificar respuestas a
+los riesgos</td>
+<td>Desarrollar opciones y
+determinar acciones para
+mejorar las oportunidades
+y reducir las amenazas
+a los objetivos del
+proyecto. Se realizará
+después de los procesos
+de análisis cualitativo de riesgos y análisis cuantitativo de
+riesgos. Se deberá abordar los riesgos en función de su
+prioridad, introduciendo recursos y actividades en el
+presupuesto, cronograma y plan de gestión del proyecto,
+según sea necesario.</td>
+<td><ul class="first last simple">
+<li>Plan de gestión de riesgos</li>
+<li>Lista de riesgos priorizados y cuantificados</li>
+<li>Lista de riesgos para un análisis y gestión adicional</li>
+<li>Propietarios del riesgo</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Plan de respuesta de riesgos</li>
+<li>Riesgos residuales</li>
+<li>Acuerdos contractuales relacionados con el riesgo</li>
+<li>Reserva de riesgos necesaria</li>
+<li>Plan de gestión del proyecto actualizado</li>
+<li>Registro de riesgos actualizado</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Registro de riesgos</li>
+<li>Estrategias para riesgos</li>
+<li>Estrategia de respuesta para contingencias</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Controlar y monitorizar
+riesgos</td>
+<td>Se deberá controlar los disparadores de riesgos, gestionar los
+riesgos identificados, realizar seguimientos sobre los riesgos
+residuales, descubrir nuevos riesgos, ejecutar planes de
+respuesta de riesgos y evaluar la efectividad de las acciones
+de respuesta.</td>
+<td><ul class="first last simple">
+<li>Plan de gestión de riesgos</li>
+<li>Plan de respuesta a los riesgos</li>
+<li>Comunicación del proyecto</li>
+<li>Cambios de alcance</li>
+<li>Identificación y análisis de riesgos adicionales</li>
+<li>Registro de riesgos</li>
+<li>Solicitudes de cambio aprobadas</li>
+<li>Informes de rendimiento</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Documentación adicional sobre riesgos del proyecto,
+incluyendo planes temporales, planes de acción
+correctiva, solicitudes de cambio.</li>
+<li>Lecciones aprendidas</li>
+<li>Actualizaciones de información de riesgos, planes de
+respuesta y estado de registro de riesgos</li>
+<li>Plan de gestión del proyecto actualizado</li>
+<li>Acciones correctivas y preventivas recomendadas</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Registro de riesgos</li>
+<li>Auditorías de los riesgos</li>
+<li>Medición del rendimiento</li>
+<li>Reuniones sobre el estado de la situación</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>Cierre de gestión de
+riesgos</td>
+<td>Compartir lecciones aprendidas es un recurso muy valioso en el
+ámbito de la gestión de riesgos. Estas lecciones pueden
+proporcionar experiencia general sobre el proceso de gestión de
+riesgos y su relación con las salidas del proyecto. Las
+lecciones aprendidas deberían se capturadas a lo largo de todo
+el ciclo de vida del proyecto, no solamente en esta última
+etapa de cierre del proyecto.</td>
+<td><ul class="first last simple">
+<li>Plan de gestión de riesgos</li>
+<li>Planes de respuesta a los riesgos desde el registro de riesgos</li>
+<li>Comunicación de riesgos</li>
+<li>Realimentación del equipo</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>Lecciones aprendidas documentadas en un informe del
+cierre del proyecto.</li>
+<li>Mejoras registradas para el proceso, plantillas y
+herramientas de la gestión de riesgos</li>
+<li>Mejoras registradas para otros procesos del
+proyecto, plantillas y herramientas</li>
+</ul>
+</td>
+<td>Registro de riesgos</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="gestion-monitorizacion-y-mitigacion-de-riesgos">
+<h2>Gestión, monitorización y mitigación de riesgos<a class="headerlink" href="#gestion-monitorizacion-y-mitigacion-de-riesgos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Continuando con la intención de promover prácticas ágiles en todos los procedimientos del proyecto la gestión, monitorización y mitigación de los riesgos internos se llevará a cabo de la siguiente manera:</p>
+<p>Los riesgos forman parte de la pila de trabajo (backlog): Durante las diferentes iteraciones, los riesgos formarán parte de los temas a tratar y el equipo debe incluirlos como historias, priorizarlos por probabilidad de ocurrencia e importancia y trabajar en las historias que resulten más relevantes para poder mitigar los riesgos asociados.</p>
+<p>Paralelamente, los riesgos externos al proyecto quizá no puedan ser tratados de manera ágil, por lo que se recomienda realizar una gestión tradicional para un mayor control.</p>
+<p>Esto implicará imponer reuniones de control, generalmente cada semana para realizar la identificación y análisis de nuevos riesgos y promover prácticas para la mitigación de riesgos que aún existan.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Plan de Aseguramiento de la Calidad de Software</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisiones.html">Historia de revisiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requerimientos.html">Ingeniería de Requerimientos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requerimientos no funcionales.html">Requerimientos no funcionales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diseno.html">Proceso de Diseño</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codificacion.html">Codificación y Producción de Contenido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pruebas.html">Pruebas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuracion.html">Gestión de la Configuración</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gestión de riesgos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion">Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alcances">Alcances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#objetivos">Objetivos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#roles-y-responsabilidades-dentro-de-la-gestion-de-riesgos">Roles y responsabilidades dentro de la gestión de riesgos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#actividades-de-la-gestion-de-riesgos">Actividades de la gestión de riesgos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gestion-monitorizacion-y-mitigacion-de-riesgos">Gestión, monitorización y mitigación de riesgos</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="configuracion.html" title="capítulo anterior">Gestión de la Configuración</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ingeniería de Software 3t.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/riesgos.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
